@@ -6,3 +6,7 @@
 .bold-title {
     text-transform: uppercase;
 }
+
+ul {
+    list-style-type: none;
+}

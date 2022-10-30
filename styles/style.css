@@ -1,0 +1,8 @@
+.golden-title {
+    color: rgb(179, 131, 42);
+    text-transform: capitalize;
+}
+
+.bold-title {
+    text-transform: uppercase;
+}

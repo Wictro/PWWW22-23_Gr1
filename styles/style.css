@@ -1,6 +1,12 @@
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../assets/fonts/great-vibes.ttf') format('truetype'); 
+} 
+
 .golden-title {
-    color: rgb(179, 131, 42);
+    color: rgb(197, 138, 27);
     text-transform: capitalize;
+    font-family: "Great Vibes", "cursive", sans-serif;
 }
 
 .bold-title {

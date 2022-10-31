@@ -13,6 +13,23 @@
     text-transform: uppercase;
 }
 
-ul {
+ul li{
     list-style-type: none;
 }
+
+ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+
+.input-wrapper{
+    box-sizing: border-box;
+}
+
+.suffix {
+    position: relative;
+    color: #7b7b93;
+    padding: 15px 15px 15px 0;
+}
+

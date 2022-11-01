@@ -33,3 +33,9 @@ ul li a{
     padding: 15px 15px 15px 0;
 }
 
+#schedule {
+    background-color: black;
+    margin: 0;
+    color: white;
+}
+

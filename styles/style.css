@@ -44,3 +44,7 @@ i{
     color: black;
 }
 
+.page-links a{
+    text-decoration: none;
+    color: black;
+}

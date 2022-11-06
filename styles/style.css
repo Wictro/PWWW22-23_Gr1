@@ -23,10 +23,6 @@ ul li a{
     color: black;
 }
 
-.input-wrapper{
-    box-sizing: border-box;
-}
-
 .suffix {
     position: relative;
     color: #7b7b93;
@@ -67,4 +63,16 @@ i{
     display: inline-block;
     font-size: 16px;
     border-radius: 30px;
+}
+
+.view-button{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 12px;
+    font-weight: bold;
+    border-style: none;
 }

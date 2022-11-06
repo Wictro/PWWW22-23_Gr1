@@ -56,3 +56,15 @@ i{
 .starters span{
     color: #7b7b93;
 }
+
+#book-button {
+    background-color: black; /* Green */
+    margin: 5px;
+    border: 2px solid orange;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+}

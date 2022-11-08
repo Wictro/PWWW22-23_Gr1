@@ -13,11 +13,11 @@
     text-transform: uppercase;
 }
 
-ul li{
+ul li {
     list-style-type: none;
 }
 
-ul li a{
+ul li a {
     list-style-type: none;
     text-decoration: none;
     color: black;
@@ -40,7 +40,7 @@ i{
     color: black;
 }
 
-.page-links a{
+.page-links a {
     text-decoration: none;
     color: black;
 }
@@ -48,32 +48,32 @@ i{
 .logo img {
     width: 2%;
 } 
-
-.starters span{
+ 
+.starters span {
     color: #7b7b93;
 }
 
-.button {
-    background-color: black;
-    margin: 5px;
-    text-decoration: none;
-    font-size: 16px;
-}
-
 #book-button {
+    background-color: black; /* Green */
+    margin: 5px;
     border: 2px solid orange;
-    color: orange;
-    padding: 15px 32px;
+    color: white;
     text-align: center;
+    text-decoration: none;
     display: inline-block;
+    font-size: 16px;
     border-radius: 30px;
 }
 
-#view-button{
+.view-button {
+    background-color: black;
     color: white;
     text-align: center;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 16px;
     padding: 12px 12px;
-    font-weight: bold;
+    font-weight: bold;  
     border-style: none;
 }
 
@@ -86,4 +86,16 @@ i{
     padding: 12px 12px;
     font-weight: bold;
     border-style: none;
+}
+
+#header-title {
+    font-family: 'Great Vibes' , sans-serif;
+    color: rgb(197, 138, 27);
+    background-color: black;
+}
+
+#header-title span {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
 }

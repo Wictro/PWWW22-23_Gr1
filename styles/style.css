@@ -76,3 +76,14 @@ i{
     font-weight: bold;
     border-style: none;
 }
+
+#booking {
+    margin: 0px;
+    background-color: rgb(233, 161, 27);
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 12px;
+    font-weight: bold;
+    border-style: none;
+}

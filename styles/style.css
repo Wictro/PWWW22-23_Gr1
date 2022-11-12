@@ -103,3 +103,10 @@ i{
 #price {
     color: rgb(197, 138, 27);
 }
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+}

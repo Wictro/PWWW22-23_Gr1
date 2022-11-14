@@ -110,3 +110,11 @@ i{
     align-items: center;
     margin: 20px;
 }
+
+.section-title-about {
+    display: block;
+}
+
+#featured-dishes {
+    margin-top: 40px;
+}

@@ -134,3 +134,15 @@ img:hover {
     transform: scale(1.2);
     box-sizing: border-box;
 }
+
+.open-weekdays {
+    font-size: 12px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.open-weekends {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: normal;
+}

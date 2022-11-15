@@ -7,6 +7,7 @@
     color: rgb(197, 138, 27);
     text-transform: capitalize;
     font-family: "Great Vibes", "cursive", sans-serif;
+    text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px;
 }
 
 .bold-title {
@@ -123,4 +124,13 @@ i{
 
 #featured-dishes {
     margin-top: 40px;
+}
+
+img:hover {
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    transform: scale(1.2);
+    box-sizing: border-box;
 }

@@ -3,6 +3,12 @@
     src: url('../assets/fonts/great-vibes.ttf') format('truetype'); 
 } 
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 .golden-title {
     color: rgb(197, 138, 27);
     text-transform: capitalize;

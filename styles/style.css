@@ -158,3 +158,15 @@ img:hover {
     font-family: sans-serif;
     font-style: normal;
 }
+
+#gallery-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #7b7b93;
+}
+
+#gallery-photos  img {
+    width: calc((100%/4)-1%);
+    
+}

@@ -92,6 +92,7 @@ i{
     font-weight: bold;
     border-style: none;
     position: relative;
+    margin-bottom: 30px;
 }
 
 #view-button:hover {

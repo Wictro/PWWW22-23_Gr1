@@ -1,3 +1,6 @@
+:root {
+    --light-orange-button-color: rgba(227, 179, 89, 0.946);
+}
 @font-face {
     font-family: 'Great Vibes';
     src: url('../assets/fonts/great-vibes.ttf') format('truetype'); 
@@ -112,7 +115,7 @@ i{
 
 #booking {
     margin: 0px;
-    background-color: rgb(233, 161, 27);
+    background-color: var(--light-orange-button-color);
     color: white;
     text-transform: uppercase;
     text-align: center;

@@ -96,6 +96,20 @@ i{
     bottom: 3px;
 }
 
+#blogs-button{
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    font-weight: bold;
+    border-style: none;
+    position: relative;
+}
+
+#blogs-button:hover {
+    color: rgb(197, 138, 27);
+    bottom: 3px;
+}
+
 #booking {
     margin: 0px;
     background-color: rgb(233, 161, 27);

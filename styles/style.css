@@ -12,15 +12,21 @@
     padding: 0;
 }
 
+header {
+    position: relative;
+    height: 500px;
+    background-image: url("../assets/images/home-background.jpg");
+    background-size: 100% 100%;
+    padding-bottom: 10px;
+} 
+
 .golden-title {
     color: rgb(197, 138, 27);
     text-transform: capitalize;
     font-family: "Great Vibes", "cursive", sans-serif;
     text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px;
 }
-.navbar nav {
-    background-color: #3a3a3c;
-}
+
 .bold-title {
     text-transform: uppercase;
 }

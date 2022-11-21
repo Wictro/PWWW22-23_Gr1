@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reservations-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Reservations</title>
 </head>
 <body>
@@ -12,11 +13,14 @@
         <h1>Reservation</h1>
         <img src="assets/images/gallery12.png"/>
     </div>
-    <div class="reservation-submit">
-        <input type="date"/>
-        <input type="time"/>
-        <input type="number"/>
-        <input type="submit"/>
-    </div>
+        <form class="reservation-submit">
+            <i class="fa fa-calendar" style="font-size:36px; color: blueviolet;"></i> <input type="date"/>
+        </br>
+            <i class="fa fa-clock-o" style="font-size:36px; color: blueviolet;"></i><input type="time"/>
+        </br>
+            <i class="fa fa-user" aria-hidden="true" style="font-size:36px; color: blueviolet;"></i><input type="number"/>
+        </br>
+            <input type="submit"/>
+        </form>
 </body>
 </html>

@@ -22,6 +22,7 @@ header {
 } 
 
 .splash {
+    margin-top: 10rem;
     text-align: center;
 }
 
@@ -48,7 +49,7 @@ ul li a {
 
 .suffix {
     position: relative;
-    color: #7b7b93;
+    color: white;
     padding: 15px 15px 15px 0;
 }
 
@@ -140,6 +141,8 @@ i{
     font-family: 'Great Vibes' , sans-serif;
     color: rgb(197, 138, 27);
     background-color: black;
+    margin-left: 20px;
+    font-size: 32px;
 }
 
 #header-title span {
@@ -202,6 +205,14 @@ img:hover {
 }
 
 .book {
-    background-color: white;
+    /* background-color: white; */
     align-items: center;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

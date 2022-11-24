@@ -216,3 +216,12 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
+.page-links {
+    float: right;
+    line-height: 80px;
+}
+
+.page-links a {
+    margin-left: 30px;
+}

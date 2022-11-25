@@ -1,95 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reservations-style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Reservations</title>
 </head>
+
 <body>
+    <header style="background-image: none;">
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <h1 id="header-title">Hunger <span>Hunt</span></h1>
+                <ul class="page-links">
+                    <a href="#">HOME</a>
+                    <a href="reservations.html" style="color: rgb(197, 138, 27)">RESERVATIONS</a>
+                    <a href="menu.html">MENU</a>
+                    <a href="blog.html">BLOG</a>
+                    <a href="shop.html">SHOP</a>
+                    <a href="contact.html">CONTACT</a>
+                </ul>
+                <ul class="social-links">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook icon"></i></a>
+                    <a href="https://www.twitter.com"><i class="fa fa-twitter icon"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram icon"></i></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <div class="reservations-title">
         <h1>Reservation</h1>
-        <img src="assets/images/gallery12.png"/>
+        <img src="assets/images/gallery12.png" />
     </div>
-        <form class="reservation-submit">
-            <i class="fa fa-calendar" style="font-size:36px; color: blueviolet;"></i> <input type="date"/>
+    <form class="reservation-submit">
+        <i class="fa fa-calendar" style="font-size:36px; color: blueviolet;"></i> <input type="date" />
         </br>
-            <i class="fa fa-clock-o" style="font-size:36px; color: blueviolet;"></i><input type="time"/>
+        <i class="fa fa-clock-o" style="font-size:36px; color: blueviolet;"></i><input type="time" />
         </br>
-            <i class="fa fa-user" aria-hidden="true" style="font-size:36px; color: blueviolet;"></i><input type="number"/>
+        <i class="fa fa-user" aria-hidden="true" style="font-size:36px; color: blueviolet;"></i><input type="number" />
         </br>
-            <input type="submit"/>
-        </form>
-        <footer>
-            <div class="footer-links">
-                <div id="contact-info">
-                    <h2>CONTACT INFO</h2>
-                    <ul>
-                        <li><address><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Box 1612 Collin Street, <abbr>NYC</abbr></address></li>
-                        <li><i class="fa fa-phone"></i> (+801)-2345-6789</li>
-                        <li><i class="fa fa-envelope"></i> support@hungerhunt.com</li>
-                    </ul>
-                </div>
-                <div id="support">
-                    <h2>SUPPORT</h2>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">Payment Options</a></li>
-                        <li><a href="#">Returns & Refunds</a></li>
-                    </ul>
-                </div>
-                <div id="shop">
-                    <h2>SHOP</h2>
-                    <ul>
-                        <li><a href="#">Non-Veg</a></li>
-                        <li><a href="#">Veg</a></li>
-                        <li><a href="#">Salads</a></li>
-                        <li><a href="#">Desserts</a></li>
-                        <li><a href="#">Appetizers</a></li>
-                    </ul>
-                </div>
-                <div id="information">
-                    <h2>INFORMATION</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blogs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div id="my-account">
-                    <h2>MY ACCOUNT</h2>
-                    <ul>
-                        <li><a href="#">Your account</a></li>
-                        <li><a href="#">Check out</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
+        <input type="submit" />
+    </form>
+    <footer>
+        <div class="footer-links">
+            <div id="contact-info">
+                <h2>CONTACT INFO</h2>
+                <ul>
+                    <li>
+                        <address><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Box 1612 Collin
+                            Street, <abbr>NYC</abbr></address>
+                    </li>
+                    <li><i class="fa fa-phone"></i> (+801)-2345-6789</li>
+                    <li><i class="fa fa-envelope"></i> support@hungerhunt.com</li>
+                </ul>
             </div>
-            <div class="footer-links-2">
-                <div id="contact">
-                    <h2>FIND US ON</h2>
-                    <nav>
-                        <ul class="social-links">
-                            <a href="https://www.facebook.com"><i class="fa fa-facebook icon"></i></a>
-                            <a href="https://www.twitter.com"><i class="fa fa-twitter icon"></i></a>
-                            <a href="https://www.pinterest.com"><i class="fa fa-pinterest icon"></i></a>
-                            <a href="https://www.instagram.com"><i class="fa fa-instagram icon"></i></a>
-                        </ul>
-                    </nav>
-                </div>
-                <div>
-                    <h2 class="golden-title" style="text-transform: uppercase; font-family: sans-serif;">NEWSLETTER</h2>
-                    <input type="email" placeholder="Your email address" />
-                </div>
+            <div id="support">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns & Refunds</a></li>
+                </ul>
             </div>
-            <div class="footer-credentials" style="background-color: black;">
-                <p style="color: gray;">@2019 Templates Jungle. All Rights Reserved</p>
+            <div id="shop">
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#">Non-Veg</a></li>
+                    <li><a href="#">Veg</a></li>
+                    <li><a href="#">Salads</a></li>
+                    <li><a href="#">Desserts</a></li>
+                    <li><a href="#">Appetizers</a></li>
+                </ul>
             </div>
-        </footer>
+            <div id="information">
+                <h2>INFORMATION</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="my-account">
+                <h2>MY ACCOUNT</h2>
+                <ul>
+                    <li><a href="#">Your account</a></li>
+                    <li><a href="#">Check out</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-links-2">
+            <div id="contact">
+                <h2>FIND US ON</h2>
+                <nav>
+                    <ul class="social-links">
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook icon"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter icon"></i></a>
+                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest icon"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram icon"></i></a>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h2 class="golden-title" style="text-transform: uppercase; font-family: sans-serif;">NEWSLETTER</h2>
+                <input type="email" placeholder="Your email address" />
+            </div>
+        </div>
+        <div class="footer-credentials" style="background-color: black;">
+            <p style="color: gray;">@2019 Templates Jungle. All Rights Reserved</p>
+        </div>
+    </footer>
 </body>
+
 </html>

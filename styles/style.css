@@ -18,7 +18,8 @@ header {
     background-image: url("../assets/images/home-background.jpg");
     background-size: 100% 100%;
     padding-bottom: 10px;
-    opacity: 0.85;
+    opacity: 1;
+    visibility: visible;
 } 
 
 .splash {
@@ -141,7 +142,6 @@ i{
     font-family: 'Great Vibes' , sans-serif;
     color: rgb(197, 138, 27);
     background-color: black;
-    margin-left: 20px;
     font-size: 32px;
 }
 
@@ -214,7 +214,7 @@ nav {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .page-links {
@@ -224,4 +224,8 @@ nav {
 
 .page-links a {
     margin-left: 30px;
+}
+
+.social-links a {
+    margin-left: 13px;
 }

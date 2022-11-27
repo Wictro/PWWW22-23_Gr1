@@ -27,9 +27,13 @@ header {
 
 .golden-title {
     color: rgb(197, 138, 27);
-    text-transform: capitalize;
     font-family: "Great Vibes", "cursive", sans-serif;
-    text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px;
+    /* text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px; */
+    font-size: 40px;
+}
+
+.golden-title::first-letter {
+    text-transform: capitalize;
 }
 
 .bold-title {
@@ -158,6 +162,11 @@ i{
     flex-wrap: wrap;
     align-items: center;
     margin: 20px;
+    height: 100%;
+}
+
+.section-title {
+    margin-bottom: 3rem;
 }
 
 .section-title-about {
@@ -207,8 +216,12 @@ img:hover {
 }
 
 .book {
-    /* background-color: white; */
-    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+.book span {
+    
 }
 
 nav {

@@ -165,6 +165,10 @@ i{
     height: 100%;
 }
 
+.form input {
+    height: 42px;
+}
+
 .section-title {
     margin-bottom: 3rem;
 }
@@ -218,6 +222,7 @@ img:hover {
 .book {
     display: grid;
     justify-content: center;
+    width: 100%;
 }
 
 .book span {

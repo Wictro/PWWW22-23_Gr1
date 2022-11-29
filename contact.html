@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header style="background-image: url(./assets/images/contactUs_bacground.jpeg);  background-size: 100% 65%; background-repeat: no-repeat;">
+    <header
+        style="background-image: url(./assets/images/contactUs_bacground.jpeg);  background-size: 100% 65%; background-repeat: no-repeat;">
         <div class="navbar">
             <div class="logo"></div>
             <nav>
@@ -36,30 +37,70 @@
             <h1 style="color: white; text-transform: uppercase;">Contact Us</h1>
         </div>
     </header>
-    <div class="location">
-          <h1>OUR LOCATION</h1>
-    </div>
-    <form>
-        <h1 class="form-title"> CONTACT FORM</h1>
-        <div class="form-items">
-            <div class="form-item">
-                <label for="input-name">Your Name</label>
-                <br>
-                <input type="text" />
+    <section class="location-section">
+            <h1>OUR LOCATION</h1>
+            <div class="phone">
+                <h2>Phone</h2>
+                <p>(+801)-2345-6789</p>
             </div>
-            <div class="form-item">
-                <label for="input-email">Your Email</label>
-                <br>
-                <input type="email" />
+            <div class="address">
+                <h2>Address</h2>
+                <p>PO Box 1612 Collin Street, NYC</p>
             </div>
-            <div class="form-item">
-                <label for="input-pone">Your Phone</label>
-                <br>
-                <input type="tel" />
+            <div class="working-hours">
+                <h3>MONDAY - FRIDAY</h3>
+                <p>7am - 11am (Breakfast)</p>
+                <p>11am - 10pm (Lunch/Dinner)</p>
+                <h3>SATURDAY - SUNDAY</h3>
+                <p>8am - 1pm (Breakfast)</p>
+                <p>1pm - 9pm (Lunch/Dinner)</p>
             </div>
+    </section>
+    <section class="form-section">
+        <form>
+            <h1 class="form-title"> CONTACT FORM</h1>
+            <div class="form-items">
+                <div class="form-item">
+                    <label for="input-name">Your Name</label>
+                    <br>
+                    <input type="text" />
+                </div>
+                <div class="form-item">
+                    <label for="input-email">Your Email</label>
+                    <br>
+                    <input type="email" />
+                </div>
+                <div class="form-item">
+                    <label for="input-pone">Your Phone</label>
+                    <br>
+                    <input type="tel" />
+                </div>
+            </div>
+        </form>
+    </section>
+    <div id="mapouter">
+        <div class="gmap_canvas"><iframe
+                src="https://maps.google.com/maps?q=PO%20Box%201612%20Collins%20Street,%20NYC&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a
+                href="https://technologg.com/blooket/" style="display:none">blooket</a>
+            <style>
+                .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 400px;
+                    width: 600px;
+                }
+            </style>
+            <style>
+                .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 400px;
+                    width: 600px;
+                }
+            </style>
         </div>
-    </form>
-    <div id="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=PO%20Box%201612%20Collins%20Street,%20NYC&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a href="https://technologg.com/blooket/" style="display:none">blooket</a><style>.mapouter{position:relative;text-align:right;height:400px;width:600px;}</style><style>.gmap_canvas{overflow:hidden;background:none!important;height:400px;width:600px;}</style></div></div>
+    </div>
 </body>
 
 </html>

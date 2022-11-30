@@ -3,3 +3,9 @@
     box-sizing: border-box;
     padding: 0;
 }
+
+.contactUs-title {
+    color: white;
+    margin: 270px 600px;
+    font-size: 45px;
+}

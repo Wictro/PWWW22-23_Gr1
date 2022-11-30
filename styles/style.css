@@ -14,8 +14,10 @@
 
 header {
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     background-image: url("../assets/images/home-background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: 100% 100%;
     opacity: 1;
 } 
@@ -52,8 +54,9 @@ ul li a {
 
 .suffix {
     position: relative;
-    color: white;
+    color: black;
     padding: 15px 15px 15px 0;
+    align-items: center;
 }
 
 #schedule {
@@ -163,6 +166,7 @@ i{
     align-items: center;
     margin: 20px;
     height: 100%;
+    background-color: white;
 }
 
 .form input {
@@ -251,5 +255,9 @@ nav {
 }
 
 #about-us {
-    margin-top: 25px;
+    margin-top: 80px;
+}
+
+#about-us-sider {
+    text-align: center;
 }

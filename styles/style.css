@@ -87,11 +87,20 @@ i{
     color: #7b7b93;
 }
 
+.starters {
+    margin: 20px 20px 20px 20px;
+}
+
 .button {
     background-color: black;
     margin: 5px;
     text-decoration: none;
     font-size: 16px;
+    padding: 12px 12px;
+}
+
+.button:hover {
+    bottom: 3px;
 }
 
 #book-button {
@@ -164,7 +173,6 @@ i{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin: 20px;
     height: 100%;
     background-color: white;
 }
@@ -256,8 +264,17 @@ nav {
 
 #about-us {
     margin-top: 80px;
+    height: 230px;
 }
 
 #about-us-sider {
     text-align: center;
+}
+
+#featured-dishes {
+    margin-top: 80px;
+}
+
+#newsletter-and-email {
+    background-color: black;
 }

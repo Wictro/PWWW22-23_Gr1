@@ -278,3 +278,11 @@ nav {
 #newsletter-and-email {
     background-color: black;
 }
+
+.featured-dishes-container {
+    margin: 20px;
+}
+
+.featured-dishes-container img {
+    margin: 5px 5px 10px 10px;
+}

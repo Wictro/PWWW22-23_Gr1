@@ -285,4 +285,6 @@ nav {
 
 .featured-dishes-container img {
     margin: 5px 5px 10px 10px;
+    height: 285px;
+    width: 380px;
 }

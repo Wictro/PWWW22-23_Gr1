@@ -1,5 +1,5 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-}
+header {
+    background-image: url('./../assets/images/reservations_background.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+ }

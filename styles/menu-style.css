@@ -17,3 +17,9 @@ table span {
     font-size: 30px;
     color: orange
 }
+
+header {
+    background-image: url('./../assets/images/menu_background.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+ }

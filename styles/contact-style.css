@@ -9,3 +9,9 @@
     margin: 270px 600px;
     font-size: 45px;
 }
+
+header {
+    background-image: url('./../assets/images/contact_background.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+ }

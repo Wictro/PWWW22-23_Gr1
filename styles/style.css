@@ -86,7 +86,7 @@ i{
 }
 
 .logo img {
-    width: 2%;
+    width: 2.5%;
 } 
  
 .starters span {
@@ -161,7 +161,6 @@ i{
 #header-title {
     font-family: 'Great Vibes' , sans-serif;
     color: rgb(197, 138, 27);
-    background-color: black;
     font-size: 32px;
 }
 
@@ -248,8 +247,11 @@ img:hover {
 }
 
 nav {
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
     height: 80px;
-    background-color: black;
+    background-color: none !important;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -269,15 +271,18 @@ nav {
 }
 
 #about-us {
+    display: block;
     margin-top: 80px;
+    height: 250px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: center;
+    margin-bottom: auto;
 }
 
 #about-us-sider {
     text-align: center;
+    margin-left: 30%;
 }
 
 #featured-dishes {

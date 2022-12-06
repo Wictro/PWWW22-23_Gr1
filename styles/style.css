@@ -50,6 +50,7 @@ ul li {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    display: inline;
 }
 
 ul li a {
@@ -208,7 +209,7 @@ img:hover {
     transition-duration: 2s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    transform: scale(1.2);
+    transform: scale(1.1);
     box-sizing: border-box;
 }
 
@@ -271,9 +272,9 @@ nav {
 }
 
 #about-us {
-    display: block;
+    display: flex;
     margin-top: 80px;
-    height: 250px;
+    height: 300px;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -283,6 +284,7 @@ nav {
 #about-us-sider {
     text-align: center;
     margin-left: 30%;
+    margin-top: 70px;
 }
 
 #featured-dishes {

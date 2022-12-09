@@ -71,9 +71,16 @@ ul li a {
 }
 
 #schedule {
-    background-color: black;
+    background-image: url("../assets/images/schedule.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
     margin: 0;
     color: white;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 i{
@@ -128,6 +135,7 @@ i{
     text-align: center;
     display: inline-block;
     border-radius: 30px;
+    margin-top: 20px;
 }
 
 #view-button{
@@ -198,9 +206,9 @@ i{
     height: 42px;
 }
 
-.section-title {
+/* .section-title {
     margin-bottom: 3rem;
-}
+} */
 
 .section-title-about {
     float: left;
@@ -322,21 +330,27 @@ nav {
     margin: 30px auto;
     display: flex;
     justify-content: space-evenly;
-    height: 500px;
+    height: 650px;
 }
 
 .featured-dishes-container img {
     margin: 5px 5px 10px 10px;
     height: 300px;
-    width: 310px;
+    width: 100%;
 }
 
 .featured-dishes-container span {
     position: relative;
-    top: 35%;
+    top: 30%;
     font-size: 50px;
     color: lightgray;
     height: 50px;
+}
+
+.featured-dishes-container h2 {
+    height: 70px;
+    padding: 5px;
+    vertical-align: middle;
 }
 
 #menu {
@@ -378,4 +392,38 @@ nav {
 
 .featured-dishes-container p:last-child {
     margin-top: 15px;
+}
+
+#black-background {
+    background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed var(--light-orange-button-color);
+    width: 80%;
+    height: 450px;
+}
+
+#black-outer-background {
+    background-color: black;
+    margin: 0 auto;
+    width: 55%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.golden-title {
+    padding: 2.5px;
+}
+
+.bold-title {
+    padding: 1.5px;
+}
+
+.open-weekdays {
+    margin-bottom: 30px;
 }

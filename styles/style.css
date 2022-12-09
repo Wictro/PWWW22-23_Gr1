@@ -418,6 +418,7 @@ nav {
 
 .open-weekdays table {
     width: 500px;
+    margin-bottom: 40px;
 }
 
 .open-weekdays th{

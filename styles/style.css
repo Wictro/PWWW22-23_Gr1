@@ -234,18 +234,6 @@ img:hover {
     box-sizing: border-box;
 }
 
-.open-weekdays {
-    font-size: 12px;
-    font-family: sans-serif;
-    font-style: normal;
-}
-
-.open-weekends {
-    font-size: 15px;
-    font-family: sans-serif;
-    font-style: normal;
-}
-
 #gallery-photos {
     display: flex;
     flex-wrap: wrap;
@@ -426,4 +414,23 @@ nav {
 
 .open-weekdays {
     margin-bottom: 30px;
+}
+
+.open-weekdays table {
+    width: 500px;
+}
+
+.open-weekdays th{
+     text-align: center;
+}
+
+.open-weekdays td{
+    text-align: center;
+}
+
+.open-weekdays tr:first-child{
+    line-height: 32px;
+}
+.open-weekdays tbody tr{
+    line-height: 10px;
 }

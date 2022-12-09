@@ -452,3 +452,16 @@ nav {
 .open-weekdays tbody td:last-child {
     padding-left: 20px;
 }
+
+.open-weekdays tbody td {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.open-weekdays thead th {
+    padding-bottom: 10px;
+}
+
+.section-title-schedule .logo {
+    margin-bottom: 7px;
+}

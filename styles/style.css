@@ -36,6 +36,7 @@ header {
     font-family: "Great Vibes", "cursive", sans-serif;
     /* text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px; */
     font-size: 40px;
+    padding: 2.5px;
 }
 
 .golden-title::first-letter {
@@ -209,6 +210,10 @@ i{
 /* .section-title {
     margin-bottom: 3rem;
 } */
+
+.section-title-schedule {
+    width: 545px;
+}
 
 .section-title-about {
     float: left;
@@ -404,10 +409,6 @@ nav {
     align-items: center;
 }
 
-.golden-title {
-    padding: 2.5px;
-}
-
 .bold-title {
     padding: 1.5px;
 }
@@ -417,7 +418,7 @@ nav {
 }
 
 .open-weekdays table {
-    width: 500px;
+    width: 545px;
     margin-bottom: 40px;
 }
 
@@ -434,4 +435,20 @@ nav {
 }
 .open-weekdays tbody tr{
     line-height: 10px;
+}
+
+.open-weekdays th:first-child {
+    padding-right: 20px;
+}
+
+.open-weekdays th:last-child {
+    padding-left: 20px;
+}
+
+.open-weekdays tbody td:first-child {
+    padding-right: 20px;
+}
+
+.open-weekdays tbody td:last-child {
+    padding-left: 20px;
 }

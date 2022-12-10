@@ -52,7 +52,7 @@ ul li {
 }
 
 #blogs {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     display: inline;
@@ -192,7 +192,10 @@ i{
 }
 
 #price {
+    position: relative;
     color: rgb(197, 138, 27);
+    float: right;
+    z-index: 500;
 }
 
 .form {
@@ -310,7 +313,7 @@ nav {
 
 #featured-dishes {
     margin-top: 80px;
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -327,7 +330,7 @@ nav {
 }
 
 .featured-dishes-container img {
-    margin: 5px 5px 10px 10px;
+    padding: 10px;
     height: 300px;
     width: 100%;
 }
@@ -338,18 +341,22 @@ nav {
     font-size: 50px;
     color: lightgray;
     height: 50px;
+    padding: 10px;
 }
 
 .featured-dishes-container h2 {
     height: 70px;
     padding: 5px;
     vertical-align: middle;
+    padding: 10px;
 }
 
 #menu {
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 100px;
+    height: 500px;
 }
 
 #featured-dishes-price {
@@ -366,10 +373,7 @@ nav {
 }
 
 .featured-dishes-container div {
-    height: 380px;
-    width: 40%;
-    display: table-cell;
-    vertical-align: middle;
+    width: 350px;
 }
 
 .featured-dishes-container p {
@@ -377,6 +381,7 @@ nav {
     line-height: 28px;
     font-weight: normal;
     color: grey;
+    padding: 10px;
 }
 
 .featured-dishes-container p:first-child {
@@ -464,4 +469,59 @@ nav {
 
 .section-title-schedule .logo {
     margin-bottom: 7px;
+}
+
+.section-title-menu {
+    text-align: center;
+    height: 95%;
+}
+
+#menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+#menu-container div:first-child {
+    margin-right: 20px;
+}
+
+#menu-container div:last-child {
+    margin-left: 20px;
+}
+
+.starters-menu {
+    width: 50%;
+}
+
+.price-separator {
+    position: relative;
+    font-size: 15px;
+    opacity: 0.85;
+    height: 5px;
+    padding-top: 15px;
+    margin-top: -1px;
+}
+
+.price-separator::before {
+    content: '';
+    border-top: 1px dashed rgb(197, 138, 27);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.65;
+}
+
+.starters li strong, .starters li span {
+    position: relative;
+    z-index: 1000;
+}
+
+.starters li {
+    font-size: 18px;
+    line-height: 2;
+    height: 22px;
+    margin-top: 20px;
 }

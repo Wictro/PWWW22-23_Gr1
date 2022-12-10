@@ -37,6 +37,7 @@ header {
     /* text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px; */
     font-size: 40px;
     padding: 2.5px;
+    font-weight: 300;
 }
 
 .golden-title::first-letter {
@@ -45,6 +46,7 @@ header {
 
 .bold-title {
     text-transform: uppercase;
+    font-size: 30px ;
 }
 
 ul li {
@@ -521,8 +523,11 @@ nav {
     line-height: 33px;
 }
 
+.gallery-photos {
+    margin-top: 20px;
+}
+
 .gallery-photos table {
-    margin-top: 15px;
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -534,4 +539,13 @@ nav {
     height: 100%;
     float: left;
     background-size: cover;
+}
+
+.gallery-photos td img:hover {
+    opacity: 0.5;
+}
+
+.gallery-button {
+    text-align: center;
+    margin-top: 30px;
 }

@@ -54,10 +54,10 @@ ul li {
 }
 
 #blogs {
+    height: 750px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    display: inline;
 }
 
 ul li a {
@@ -548,4 +548,52 @@ nav {
 .gallery-button {
     text-align: center;
     margin-top: 30px;
+}
+
+.blogs {
+    height: 75%;
+    display: flex;
+}
+
+.blogs div {
+    width: 50%;
+    text-align: justify;
+}
+
+.blogs img {
+    width: 100%;
+    height: 320px;
+}
+
+.blogs div:first-child {
+    padding-right: 15px;
+}
+
+.blogs div:last-child {
+    padding-left: 15px;
+}
+
+.blog p, .blog pre, .blog h2 {
+    
+}
+
+.section-title-blogs {
+    height: 100%;
+}
+
+.blog h2 {
+    height: 60px;
+    width: 90%;
+}
+
+.blog p {
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    width: 90%;
+}
+
+.blog pre {
+    padding-top: 3px;
+    height: 80px;
+    width: 90%;
 }

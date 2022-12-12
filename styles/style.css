@@ -624,3 +624,22 @@ nav {
     padding: 20px;
     width: 300px;
 }
+
+#newsletter-and-email input {
+    background: transparent;
+    width: 300px;
+    height: 35px;
+    color: rgb(81, 80, 80);
+    border-radius: 0;
+}
+
+#newsletter-and-email:hover{
+    border-radius: 0;
+}
+
+#newsletter-and-email input::after {
+    border-radius: 0;
+}
+#newsletter-and-email input::placeholder {
+    color: rgb(81, 80, 80);
+}

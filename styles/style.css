@@ -259,7 +259,7 @@ nav {
     width: 100%;
     top: 0;
     height: 80px;
-    background-color: none !important;
+    /* background-color: none !important; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -309,9 +309,9 @@ nav {
     margin-right: auto;
 }
 
-#newsletter-and-email {
+/* #newsletter-and-email {
     background-color: black;
-}
+} */
 
 .featured-dishes-container {
     margin: 30px auto;
@@ -596,4 +596,31 @@ nav {
     padding-top: 3px;
     height: 80px;
     width: 90%;
+}
+
+.footer-background-content {
+    background-color: grey;
+}
+
+.footer-background-content h2, .footer-background-content li, .footer-background-content a {
+    color: white;
+}
+
+.footer-credentials {
+    height: 80px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links, .footer-links-2 {
+    display: flex;
+    padding: 15px 10px;
+    width: 100%;
+}
+
+.footer-links div, .footer-links-2 div {
+    padding: 20px;
+    width: 300px;
 }

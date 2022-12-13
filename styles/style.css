@@ -618,11 +618,12 @@ nav {
     display: flex;
     padding: 15px 10px;
     width: 100%;
+    justify-content: space-around;
 }
 
 .footer-links div, .footer-links-2 div {
     padding: 20px;
-    width: 300px;
+    width: 320px;
 }
 
 #newsletter-and-email input:not(:last-child) {
@@ -658,3 +659,16 @@ nav {
     margin-top: 10px;
     padding-top: 10px;
 } */
+
+.footer-links h2 {
+    margin-bottom: 20px;
+}
+
+#contact-info, #support, #shop, #information, #my-account li{
+    text-align: justify;
+    line-height: 26px;
+}
+
+#shop {
+    
+}

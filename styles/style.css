@@ -598,8 +598,8 @@ nav {
     width: 90%;
 }
 
-.footer-background-content {
-    background-color: grey;
+.footer-background-content {    
+    background-color: #2b211f;
 }
 
 .footer-background-content h2, .footer-background-content li, .footer-background-content a {
@@ -625,21 +625,36 @@ nav {
     width: 300px;
 }
 
-#newsletter-and-email input {
+#newsletter-and-email input:not(:last-child) {
     background: transparent;
-    width: 300px;
-    height: 35px;
-    color: rgb(81, 80, 80);
+    width: 220px;
+    height: 40px;
+    color: rgba(245, 245, 220, 0.569);
     border-radius: 0;
+    border-color: rgba(245, 245, 220, 0.569);
+    border-width: 0.3px;
+    padding-left: 7px;
+    font-size: 15px;
+    background-size: 20px   ;
 }
 
-#newsletter-and-email:hover{
-    border-radius: 0;
+#newsletter-and-email h3{
+   color:rgb(223, 184, 112);
 }
 
-#newsletter-and-email input::after {
-    border-radius: 0;
+#newsletter-and-email input:not(:last-child):focus {
+    outline: none !important;
+    border-color: rgba(245, 245, 220, 0.8);
 }
-#newsletter-and-email input::placeholder {
-    color: rgb(81, 80, 80);
+#newsletter-and-email input:not(:last-child)::placeholder {
+    color: rgba(245, 245, 220, 0.569);
 }
+
+/* #newsletter-and-email input:last-child {
+    background-image: url('../assets/images/send-icon.png');
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: 10px;
+    padding-top: 10px;
+} */

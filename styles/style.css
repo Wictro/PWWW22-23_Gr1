@@ -647,19 +647,21 @@ nav {
 
 #newsletter-and-email input:not(:last-child) {
     background: transparent;
-    width: 220px;
-    height: 40px;
+    width: 250px;
+    height: 45px;
     color: rgba(245, 245, 220, 0.569);
     border-radius: 0;
     border-color: rgba(245, 245, 220, 0.569);
     border-width: 0.3px;
     padding-left: 7px;
     font-size: 15px;
-    background-size: 20px   ;
+    background-size: 20px;
+    margin-top: 18px;
 }
 
 #newsletter-and-email h3{
    color:rgb(223, 184, 112);
+   font-size: 16px;
 }
 
 #newsletter-and-email input:not(:last-child):focus {
@@ -670,14 +672,20 @@ nav {
     color: rgba(245, 245, 220, 0.569);
 }
 
-/* #newsletter-and-email input:last-child {
+#email-submit {
     background-image: url('../assets/images/send-icon.png');
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 5px;
+    background-color: transparent;
+    border: none;
+    display: table-cell;
+    vertical-align: middle;
     width: 30px;
     height: 30px;
     margin-left: -40px;
-    margin-top: 10px;
-    padding-top: 10px;
-} */
+    margin-top: -3px;
+}
 
 .footer-links h2 {
     margin-bottom: 20px;

@@ -606,6 +606,10 @@ nav {
     color: white;
 }
 
+.footer-links li {
+    font-size: 16px;
+}
+
 .footer-credentials {
     height: 80px;
     display: flex;
@@ -614,16 +618,31 @@ nav {
     align-items: center;
 }
 
-.footer-links, .footer-links-2 {
+.footer-links {
+    display: flex;
+    padding: 15px 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-links-2 {
     display: flex;
     padding: 15px 10px;
     width: 100%;
     justify-content: space-around;
 }
 
+#support {
+    padding-left: 45px;
+}
+
 .footer-links div, .footer-links-2 div {
-    padding: 20px;
-    width: 320px;
+    padding: 20px 0px;
+    width: 280px;
+}
+
+.footer-links i {
+    color: rgb(197, 138, 27);
 }
 
 #newsletter-and-email input:not(:last-child) {
@@ -670,5 +689,10 @@ nav {
 }
 
 #shop {
-    
+    padding-left: 30px;
+}
+
+#contact nav {
+    height: 50px;
+    justify-content: left;
 }

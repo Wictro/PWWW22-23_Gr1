@@ -51,6 +51,9 @@
                 <div class="phone-content">
                     <h5>Phone</h5>
                     <p>(+801)-2345-6789</p>
+                    <canvas id="styling-canvas-1" width="450" height="200"
+                        style="margin-left: -10px; margin-top: -45px;">
+                    </canvas>
                 </div>
             </div>
             <div class="address">
@@ -61,6 +64,9 @@
                                     aria-hidden="true"></i></span>
                             PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address>
                     </p>
+                    <canvas id="styling-canvas-2" width="450" height="200"
+                        style="margin-left: -10px; margin-top: -45px;">
+                    </canvas>
                 </div>
             </div>
             <div class="working-hours">
@@ -71,8 +77,36 @@
                     <h6>SATURDAY - SUNDAY</h6>
                     <p>8am - 1pm (Breakfast)</p>
                     <p>1pm - 9pm (Lunch/Dinner)</p>
+                    <canvas id="styling-canvas-3" width="450" height="200"
+                        style="margin-left: -10px; margin-top: -105px;">
+                    </canvas>
                 </div>
             </div>
+            <script>
+                for (let id=1; id<=3; id++){
+                   var c = document.getElementById("styling-canvas-"+id);
+                   var context = c.getContext("2d")
+                   context.fillStyle = "#C58A1B";
+                   context.beginPath()
+                   context.moveTo(0, 0)
+                   context.lineTo(80, 100)
+                   context.lineTo(0, 200)
+                   context.lineTo(0,0)
+                   context.closePath()
+                   context.fill()
+                   context.strokeStyle = "#4f2d0a"
+                   context.lineWidth = 1
+                   context.stroke()
+                   context.setLineDash([3, 3]);
+                   context.beginPath()
+                   context.moveTo(5, 15)
+                   context.lineTo(72, 100)
+                   context.lineTo(5, 185)
+                   context.lineTo(5,15)
+                   context.closePath()
+                   context.stroke()
+               }
+               </script>
     </section>
     <section class="form-section">
         <div class="section-title">

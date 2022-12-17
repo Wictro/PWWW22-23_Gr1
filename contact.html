@@ -49,64 +49,89 @@
         <div class="location-container">
             <div class="phone">
                 <div class="phone-content">
-                    <h5>Phone</h5>
+                    <h5><span><i class="fa fa-phone" style="color: rgb(197, 138, 27);"></i></span>  Phone</h5>
                     <p>(+801)-2345-6789</p>
-                    <canvas id="styling-canvas-1" width="450" height="200"
-                        style="margin-left: -10px; margin-top: -45px;">
+                    <canvas id="styling-canvas-1" width="100" height="200"
+                        style="margin-left: -350px; margin-top: -108px;">
                     </canvas>
+
                 </div>
             </div>
             <div class="address">
                 <div class="address-content">
-                    <h5>Address</h5>
+                    <h5><span><i class="fa fa-map-marker" aria-hidden="true" style="color: rgb(197, 138, 27);"></i></span>  Address</h5>
                     <p>
-                    <address><a href="#mapouter" id="map-link"><span><i class="fa fa-map-marker"
-                                    aria-hidden="true"></i></span>
-                            PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address>
+                    <address><a href="#mapouter" id="map-link">PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address>
                     </p>
-                    <canvas id="styling-canvas-2" width="450" height="200"
-                        style="margin-left: -10px; margin-top: -45px;">
+                    <canvas id="styling-canvas-2" width="100" height="200"
+                        style="margin-left: -345px; margin-top: -128px;">
                     </canvas>
                 </div>
             </div>
             <div class="working-hours">
                 <div class="working-hours-content">
+                    <h5><span><i class="fa fa-clock-o" aria-hidden="true" style="color: rgb(197, 138, 27);"></i></span>  Working Hours</h5> 
                     <h6>MONDAY - FRIDAY</h6>
-                    <p>7am - 11am (Breakfast)</p>
-                    <p>11am - 10pm (Lunch/Dinner)</p>
+                    <p>7am - 10pm</p>
                     <h6>SATURDAY - SUNDAY</h6>
-                    <p>8am - 1pm (Breakfast)</p>
-                    <p>1pm - 9pm (Lunch/Dinner)</p>
-                    <canvas id="styling-canvas-3" width="450" height="200"
-                        style="margin-left: -10px; margin-top: -105px;">
+                    <p>8am - 9pm</p>
+                    <canvas id="styling-canvas-3" width="100" height="200"
+                        style="margin-left: -348px; margin-top: -163px;">
                     </canvas>
                 </div>
             </div>
             <script>
-                for (let id=1; id<=3; id++){
-                   var c = document.getElementById("styling-canvas-"+id);
-                   var context = c.getContext("2d")
-                   context.fillStyle = "#C58A1B";
-                   context.beginPath()
-                   context.moveTo(0, 0)
-                   context.lineTo(80, 100)
-                   context.lineTo(0, 200)
-                   context.lineTo(0,0)
-                   context.closePath()
-                   context.fill()
-                   context.strokeStyle = "#4f2d0a"
-                   context.lineWidth = 1
-                   context.stroke()
-                   context.setLineDash([3, 3]);
-                   context.beginPath()
-                   context.moveTo(5, 15)
-                   context.lineTo(72, 100)
-                   context.lineTo(5, 185)
-                   context.lineTo(5,15)
-                   context.closePath()
-                   context.stroke()
-               }
-               </script>
+                for (let id = 1; id <= 3; id++) {
+                    var c = document.getElementById("styling-canvas-" + id);
+                    var context = c.getContext("2d")
+                    context.fillStyle = "#C58A1B";
+                    context.beginPath()
+                    context.moveTo(0, 0)
+                    context.lineTo(80, 100)
+                    context.lineTo(0, 200)
+                    context.lineTo(0, 0)
+                    context.closePath()
+                    context.fill()
+                    context.strokeStyle = "#4f2d0a"
+                    context.lineWidth = 1
+                    context.stroke()
+                    context.setLineDash([3, 3]);
+                    context.beginPath()
+                    context.moveTo(5, 15)
+                    context.lineTo(72, 100)
+                    context.lineTo(5, 185)
+                    context.lineTo(5, 15)
+                    context.closePath()
+                    context.stroke()
+                }
+            </script>
+    </section>
+    <section class="form-section">
+        <div class="section-title">
+            <h5>~ Send us a message ~</h5>
+            <hr>
+            <h4>CONTACT FORM</h4>
+            <hr>
+        </div>
+        <form>
+            <div class="form-items">
+                <div class="form-item">
+                    <label for="input-name">Your Name</label>
+                    <br>
+                    <input type="text" />
+                </div>
+                <div class="form-item">
+                    <label for="input-email">Your Email</label>
+                    <br>
+                    <input type="email" />
+                </div>
+                <div class="form-item">
+                    <label for="input-pone">Your Phone</label>
+                    <br>
+                    <input type="tel" />
+                </div>
+            </div>
+        </form>
     </section>
     <section class="form-section">
         <div class="section-title">

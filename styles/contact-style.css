@@ -69,3 +69,41 @@
    height: 180px;
    margin: 7px;
 }
+
+.location-container div div h5 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 15px;
+    color: rgb(197, 138, 27);
+}
+
+.phone-content p {
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.address-content p,address, a{
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 20px;
+    padding-left: 5px;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+
+.working-hours-content h6 {
+    font-weight: 200;
+    margin-top: 8px;
+    font-size: 18px;
+}
+.working-hours-content p {
+    font-weight: 200;
+    font-size: 15px;
+    color: rgb(97, 97, 97);
+}
+
+.working-hours-content h5 {
+     margin-bottom: 15px;
+}

@@ -17,7 +17,9 @@
         <div class="navbar">
             <div class="logo"></div>
             <nav>
-                <a href="index.html" style="text-decoration: none;"><h1 id="header-title">Hunger <span>Hunt</span></h1></a>
+                <a href="index.html" style="text-decoration: none;">
+                    <h1 id="header-title">Hunger <span>Hunt</span></h1>
+                </a>
                 <ul class="page-links">
                     <a href="index.html">HOME</a>
                     <a href="reservations.html">RESERVATIONS</a>
@@ -38,23 +40,26 @@
         </div>
     </header>
     <section class="location-section">
-            <h1>OUR LOCATION</h1>
-            <div class="phone">
-                <h2>Phone</h2>
-                <p>(+801)-2345-6789</p>
-            </div>
-            <div class="address">
-                <h2>Address</h2>
-                <p><address><a href="#mapouter" id="map-link"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address></p>
-            </div>
-            <div class="working-hours">
-                <h3>MONDAY - FRIDAY</h3>
-                <p>7am - 11am (Breakfast)</p>
-                <p>11am - 10pm (Lunch/Dinner)</p>
-                <h3>SATURDAY - SUNDAY</h3>
-                <p>8am - 1pm (Breakfast)</p>
-                <p>1pm - 9pm (Lunch/Dinner)</p>
-            </div>
+        <h1>OUR LOCATION</h1>
+        <div class="phone">
+            <h2>Phone</h2>
+            <p>(+801)-2345-6789</p>
+        </div>
+        <div class="address">
+            <h2>Address</h2>
+            <p>
+            <address><a href="#mapouter" id="map-link"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address>
+            </p>
+        </div>
+        <div class="working-hours">
+            <h3>MONDAY - FRIDAY</h3>
+            <p>7am - 11am (Breakfast)</p>
+            <p>11am - 10pm (Lunch/Dinner)</p>
+            <h3>SATURDAY - SUNDAY</h3>
+            <p>8am - 1pm (Breakfast)</p>
+            <p>1pm - 9pm (Lunch/Dinner)</p>
+        </div>
     </section>
     <section class="form-section">
         <form>
@@ -78,29 +83,95 @@
             </div>
         </form>
     </section>
-    <div id="mapouter">
-        <div class="gmap_canvas"><iframe
-                src="https://maps.google.com/maps?q=PO%20Box%201612%20Collins%20Street,%20NYC&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-                id="gmap_canvas" frameborder="0" scrolling="no" style="width: 600px; height: 400px;"></iframe><a
-                href="https://technologg.com/blooket/" style="display:none">blooket</a>
-            <style type="text/css">
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    height: 400px;
-                    width: 600px;
-                }
-            </style>
-            <style type="text/css">
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    height: 400px;
-                    width: 600px;
-                }
-            </style>
+    <div class="map-section">
+        <iframe class= "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.4352682266062!2d-73.97586378418984!3d40.75245037932762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af84f24db9%3A0xb6a8d79d323b5b56!2sLittle%20Collins!5e0!3m2!1sen!2s!4v1671280934839!5m2!1sen!2s" 
+         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <style>
+            .map {
+                width: 100%;
+                height: 400px;
+                border: 0.2px solid black;
+                margin-bottom: 20px;
+            }
+        </style>
+    </div>
+    <footer>
+        <div class="footer-background-content">
+        <div class="footer-links">
+            <div id="contact-info">
+                <h2>CONTACT INFO</h2>
+                <ul>
+                    <li><address><a href="./contact.html#mapouter" id="map-link"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address></li>
+                    <li><i class="fa fa-phone"></i> (+801)-2345-6789</li>
+                    <li><i class="fa fa-envelope"></i> support@hungerhunt.com</li>
+                </ul>
+            </div>
+            <div id="support">
+                <h2>SUPPORT</h2>
+                <ul>
+                    <li><a href="#" id="faq-link">FAQ</a></li>
+                    <li><a href="#" id="delivery-link">Delivery</a></li>
+                    <li><a href="#" id="payment-link">Payment Options</a></li>
+                    <li><a href="#" id="payment-link">Returns & Refunds</a></li>
+                </ul>
+            </div>
+            <div id="shop">
+                <h2>SHOP</h2>
+                <ul>
+                    <li><a href="#" id="non-veg-link">Non-Veg</a></li>
+                    <li><a href="#" id="veg-link">Veg</a></li>
+                    <li><a href="#" id="salads-link">Salads</a></li>
+                    <li><a href="#" id="desserts-link">Desserts</a></li>
+                    <li><a href="#" id="appertizers-link">Appetizers</a></li>
+                </ul>
+            </div>
+            <div id="information">
+                <h2>INFORMATION</h2>
+                <ul>
+                    <li><a href="#" id="home-link">Home</a></li>
+                    <li><a href="#" id="about-us-link">About Us</a></li>
+                    <li><a href="#" id="blogs-link">Blogs</a></li>
+                    <li><a href="#" id="contact-us-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="my-account">
+                <h2>MY ACCOUNT</h2>
+                <ul>
+                    <li><a href="#" id="your-account-link">Your account</a></li>
+                    <li><a href="#" id="check-out-link">Check out</a></li>
+                    <li><a href="#" id="login-link">Login</a></li>
+                    <li><a href="#" id="register-link">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-links-2">
+            <div id="contact">
+                <h2>FIND US ON</h2>
+                <nav>
+                    <ul class="social-links">
+                        <a href="https://www.facebook.com" id="facebook-link"><i class="fa fa-facebook icon" style="color: rgb(197, 138, 27);"></i></a>
+                        <a href="https://www.twitter.com" id="twitter-link"><i class="fa fa-twitter icon" style="color: white;"></i></a>
+                        <a href="https://www.pinterest.com" id="pinterest-link"><i class="fa fa-pinterest icon" style="color: white;"></i></a>
+                        <a href="https://www.instagram.com" id="instagram-link"><i class="fa fa-instagram icon" style="color: white;"></i></a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="newsletter-and-email">
+                <h3 style="text-transform: uppercase; font-family: sans-serif;">NEWSLETTER</h3>
+                <input type="email" placeholder="Your email address" />
+                <button id="email-submit"></button>
+            </div>
         </div>
     </div>
+        <div class="footer-credentials" style="background-color: black;">
+            <p style="color: gray;">@2019 Templates Jungle. All Rights Reserved</p>
+            <div class="card-class">
+                <i class="fa fa-cc-visa" style="color: red;"></i>
+                <i class="fa fa-cc-mastercard" style="background-color: orange; background-size: cover  ;"></i>
+                <i class="fa fa-cc-amex" style="color: lightblue;"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

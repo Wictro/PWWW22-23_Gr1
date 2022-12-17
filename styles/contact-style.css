@@ -15,4 +15,8 @@
 header {
     background-size: 100% 60%;
     background-repeat: no-repeat;
- }
+}
+
+.map-section {
+    width: 100%;
+}

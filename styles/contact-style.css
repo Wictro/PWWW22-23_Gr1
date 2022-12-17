@@ -43,3 +43,29 @@
     margin-bottom: 5px;
     font-weight: 100;
 }
+
+.location-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 120px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.location-container div{
+    text-align: center;
+    width: 450px;
+    height: 200px;
+    border: 2px solid rgb(197, 138, 27);
+    background-color: rgba(236, 222, 196,0.1);
+}
+
+.location-container div div {
+   border: 2px dotted rgb(197, 138, 27);
+   background: none;
+   width: 430px;
+   height: 180px;
+   margin: 7px;
+}

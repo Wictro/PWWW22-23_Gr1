@@ -107,3 +107,25 @@
 .working-hours-content h5 {
      margin-bottom: 15px;
 }
+
+.form-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.form-items div {
+    width: calc(100%/3);
+    height: calc(100%/2);
+    text-align: center;   
+}
+
+.form-item-text input{
+    width: 60%;
+    height: 35px;
+    margin-top: 5px;
+    position: relative;
+}

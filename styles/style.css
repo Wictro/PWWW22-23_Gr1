@@ -26,14 +26,19 @@ header {
     opacity: 0.92;
 }
 
+header div {
+    /* margin-top: 200px; */
+}
+
 .navbar {
     background-color: black;
     position: sticky;
     top: 0px;
+    z-index: 10000;
 }
 
 .splash {
-    margin-top: 10rem;
+    padding-top: 250px;
     text-align: center;
 }
 

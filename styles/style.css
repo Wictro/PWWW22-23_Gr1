@@ -1,5 +1,6 @@
 :root {
     --light-orange-button-color: rgba(227, 179, 89, 0.946);
+    --transparent-black: rgba(0, 4 ,5, 0.85);
 }
 @font-face {
     font-family: 'Great Vibes';

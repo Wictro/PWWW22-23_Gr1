@@ -31,7 +31,7 @@ header div {
 }
 
 .navbar {
-    background-color: black;
+    background-color: rgba(19,19,22,0.5);
     position: sticky;
     top: 0px;
     z-index: 10000;
@@ -74,12 +74,12 @@ ul li {
 ul li a {
     list-style-type: none;
     text-decoration: none;
-    color: black;
+    color: rgba(19,19,22,0.5);
 }
 
 .suffix {
     position: relative;
-    color: black;
+    color: rgba(19,19,22,0.5);
     padding: 15px 15px 15px 0;
     align-items: center;
 }
@@ -99,11 +99,11 @@ ul li a {
 
 i{
     text-decoration: none;
-    color: black;
+    color: rgba(19,19,22,0.5);
 }
 
 .page-links {
-    text-shadow: black -2.36667px 1.13333px 1.96803px;
+    text-shadow: rgba(19,19,22,0.5) -2.36667px 1.13333px 1.96803px;
 }
 
 .page-links a {
@@ -131,7 +131,7 @@ i{
 }
 
 .button {
-    background-color: black;
+    background-color: rgba(19,19,22,0.5);
     margin: 5px;
     text-decoration: none;
     font-size: 16px;
@@ -321,7 +321,7 @@ nav {
 }
 
 /* #newsletter-and-email {
-    background-color: black;
+    background-color: rgba(19,19,22,0.5);
 } */
 
 .featured-dishes-container {
@@ -395,7 +395,7 @@ nav {
 }
 
 #black-background {
-    background-color: black;
+    background-color: rgba(19,19,22,0.5);
     margin: 0 auto;
     text-align: center;
     display: grid;
@@ -407,7 +407,7 @@ nav {
 }
 
 #black-outer-background {
-    background-color: black;
+    background-color: rgba(19,19,22,0.5);
     margin: 0 auto;
     width: 55%;
     height: 550px;

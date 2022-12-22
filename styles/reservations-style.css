@@ -1,3 +1,14 @@
+:root {
+    --light-orange-button-color: rgba(227, 179, 89, 0.946);
+    --transparent-black: rgba(0, 4 ,5, 0.85);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
 header {
     background-image: url('./../assets/images/reservations_background.jpg');
     background-size: 100% 60%;

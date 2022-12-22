@@ -32,7 +32,7 @@ header div {
 }
 
 .navbar {
-    background-color: rgba(19,19,22,0.5);
+    background-color: var(--transparent-black);
     position: sticky;
     top: 0px;
     z-index: 10000;
@@ -75,12 +75,12 @@ ul li {
 ul li a {
     list-style-type: none;
     text-decoration: none;
-    color: rgba(19,19,22,0.5);
+    color: var(--transparent-black);
 }
 
 .suffix {
     position: relative;
-    color: rgba(19,19,22,0.5);
+    color: var(--transparent-black);
     padding: 15px 15px 15px 0;
     align-items: center;
 }
@@ -100,11 +100,11 @@ ul li a {
 
 i{
     text-decoration: none;
-    color: rgba(19,19,22,0.5);
+    color: var(--transparent-black);
 }
 
 .page-links {
-    text-shadow: rgba(19,19,22,0.5) -2.36667px 1.13333px 1.96803px;
+    text-shadow: var(--transparent-black) -2.36667px 1.13333px 1.96803px;
 }
 
 .page-links a {
@@ -132,7 +132,7 @@ i{
 }
 
 .button {
-    background-color: rgba(19,19,22,0.5);
+    background-color: var(--transparent-black);
     margin: 5px;
     text-decoration: none;
     font-size: 16px;
@@ -322,7 +322,7 @@ nav {
 }
 
 /* #newsletter-and-email {
-    background-color: rgba(19,19,22,0.5);
+    background-color: var(--transparent-black);
 } */
 
 .featured-dishes-container {
@@ -396,7 +396,7 @@ nav {
 }
 
 #black-background {
-    background-color: rgba(19,19,22,0.5);
+    background-color: var(--transparent-black);
     margin: 0 auto;
     text-align: center;
     display: grid;
@@ -408,7 +408,7 @@ nav {
 }
 
 #black-outer-background {
-    background-color: rgba(19,19,22,0.5);
+    background-color: var(--transparent-black);
     margin: 0 auto;
     width: 55%;
     height: 550px;

@@ -1,6 +1,6 @@
 :root {
     --light-orange-button-color: rgba(227, 179, 89, 0.946);
-    --transparent-black: rgba(0, 4 ,5, 0.85);
+    --transparent-black: rgba(0, 0, 0, 0.85);
 }
 @font-face {
     font-family: 'Great Vibes';
@@ -267,11 +267,9 @@ i{
 }
 
 nav {
-    /* position: fixed; */
     width: 100%;
     top: 0;
     height: 80px;
-    /* background-color: none !important; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -738,4 +736,48 @@ footer {
 
 .card-class i {
     padding: 0px 15px;
+}
+
+
+/* Some queries for different type of window resolution */
+
+@media screen and (max-width: 1515px) {
+    #blogs, #menu, #featured-dishes, #about-us {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #black-outer-background {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 915px) {
+    #blogs, #menu, #featured-dishes, #about-us {
+        width: 100%;
+    }
+
+    .menu-container {
+        display: block;
+        margin: auto;
+    }
+}
+
+/* @media screen and (max-width: 1120px) {
+    footer {
+        width: 1110px;
+    }
+} */
+
+/* @media screen and (max-width: 775px) {
+    #blogs, #menu, #featured-dishes, #about-us {
+        width: 100%;
+    }
+} */
+
+@media screen and (max-width: 670px) {
+    #black-background {
+        width: 100%;
+    }
 }

@@ -1,4 +1,6 @@
-var navbar = `<a href="index.html" id="index-link" style="text-decoration: none;"><h1 id="header-title">Hunger <span>Hunt</span></h1></a>
+var navbar = `<a href="index.html" style="text-decoration: none; display: flex;"><div class="navbar-logo">
+<img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon"/>
+</div><h1 id="header-title">Hunger <span>Hunt</span></h1></a>
                 <ul class="page-links">
                     <a href="index.html" id="index-link" style="color: rgb(197, 138, 27)">HOME</a>
                     <a href="reservations.html" id="reservations-link">RESERVATIONS</a>

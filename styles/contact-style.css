@@ -128,9 +128,15 @@
     text-align: center;   
 }
 
-.form-item-text input{
+.form-item-text input {
     width: 60%;
-    height: 35px;
-    margin-top: 5px;
+    height: 40px;
+    position: relative;
+    vertical-align: top;
+}
+
+.form-item-text div {
+    width: 55%;
+    margin-top: 20px;
     position: relative;
 }

@@ -220,3 +220,115 @@ footer {
 .card-class i {
     padding: 0px 15px;
 }
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--transparent-black);
+}
+
+.reservation-submit i {
+    font-size: 36px;
+    color: var(--transparent-black);
+}
+
+.form-container {
+    display: flex;
+    height: 700px;
+}
+
+.reservation-form {
+    margin: auto;
+    width: 65%;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.form-submenu {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(0,0,0,.05);
+}
+
+.title-form {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-submit {
+    height: 300px;
+}
+
+.reservation-button {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+#submit-reservation {
+    color: white;
+    background-color: green;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    position: relative;
+    font-size: 18px;
+}
+
+.reservation-mid {
+    padding-left: 40px;
+}
+
+.form-row {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+}
+
+.label {
+    height: 36px;
+    width: 180px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.label label {
+    font-size: 24px;
+}
+
+.icon {
+    padding-left: 8px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon i {
+    background-color: #867594;
+    color: rgb(49, 26, 26);
+    width: 100%;
+    height: 100%;
+}
+
+.input-element {
+    width: 440px;
+    display: flex;
+    align-items: center;
+}
+
+.input-element input {
+    height: 100%;
+    width: 100%;
+    color: transparent;
+}

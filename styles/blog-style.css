@@ -213,6 +213,15 @@ footer {
     align-items: center;
 }
 
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--transparent-black);
+}
+
 .card-class {
     margin-left: 300px;
 }

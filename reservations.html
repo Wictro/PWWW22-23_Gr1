@@ -18,15 +18,57 @@
             </nav>
         </div>
     </header>
-    <form class="reservation-submit">
-        <i class="fa fa-calendar" style="font-size:36px; color: black;"></i> <input type="date" />
-        </br>
-        <i class="fa fa-clock-o" style="font-size:36px; color: black;"></i><input type="time" />
-        </br>
-        <i class="fa fa-user" aria-hidden="true" style="font-size:36px; color: black;"></i><input type="number" />
-        </br>
-        <input type="submit" />
-    </form>
+    <div class="form-container">
+        <div class="reservation-form">
+            <div class="form-submenu">
+                <div class="title-form"><h4 style="font-size: 38px; color: rgb(27, 23, 23);">HungerHunt Restaurant Reservation</h4></div>
+                <div class="title-form"><p style="font-size: 20px; color: rgb(14, 45, 102);">+383548454648456</p></div>
+            </div>
+            <div class="reservation-mid">
+                <form class="reservation-submit">
+                    <div class="form-row" style="padding-top: 40px;">
+                        <div class="label">
+                            <label for="date">Date: </label>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-element">
+                            <input type="date" name="date"/>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="form-row">
+                        <div class="label">
+                            <label for="time">Time: </label>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-element">
+                            <input type="time" name="time"/>
+                        </div>
+                    </div>
+                    </br>
+                    <div class="form-row">
+                        <div class="label">
+                            <label for="peopleNumber">People: </label>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="input-element">
+                            <input type="number" name="peopleNumber"/>
+                        </div>
+                    </div>
+                    </br>
+                </form>
+            </div>
+            <div class="form-submenu">
+                <div class="reservation-button"><input type="submit" id="submit-reservation"/></div>
+            </div>
+        </div>
+    </div>
     <footer>
         <script src="utils/footer.js" type="text/JavaScript"></script>
     </footer>

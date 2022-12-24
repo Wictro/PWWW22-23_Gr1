@@ -270,6 +270,7 @@ ul li a {
 .starters li strong, .starters li span {
     position: relative;
     z-index: 1000;
+    background-color: #f5f5f5;
 }
 
 .starters li {

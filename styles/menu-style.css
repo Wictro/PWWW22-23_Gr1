@@ -1,6 +1,6 @@
 :root {
     --light-orange-button-color: rgba(227, 179, 89, 0.946);
-    --transparent-black: rgba(0, 4 ,5, 0.85);
+    --transparent-black: rgba(0, 0, 0, 0.85);
 }
 
 * {
@@ -24,7 +24,213 @@ table span {
 }
 
 header {
-    background-image: url('./../assets/images/menu_background.jpg');
-    background-size: 100% 60%;
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/homeBackground.jpg");
     background-repeat: no-repeat;
- }
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    opacity: 0.92;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+}
+
+.page-links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.page-links {
+    float: right;
+    line-height: 80px;
+    text-shadow: var(--transparent-black) -2.36667px 1.13333px 1.96803px;
+}
+
+.social-links a {
+    margin-left: 13px;
+}
+
+.navbar {
+    background-color: var(--transparent-black);
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+    display: flex;
+}
+
+.navbar-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+}
+
+#header-title {
+    font-family: 'Great Vibes' , sans-serif;
+    color: rgb(197, 138, 27);
+    font-size: 32px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+#header-title span {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    top: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#menu-link {
+    color: rgb(197, 138, 27);
+}
+
+footer {
+    height: 550px;
+}
+
+.footer-background-content {    
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/footer-background.jpeg");
+    height: 470px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+}
+
+.footer-background-content h2, .footer-background-content li, .footer-background-content a {
+    color: white;
+}
+
+.footer-background-content::before {
+    content: "";
+    filter: brightness(100%);
+    transition: all .2s linear;
+}
+
+.footer-links {
+    display: flex;
+    padding: 15px 10px;
+    width: 100%;
+    justify-content: center;
+    height: 50%;
+}
+
+.footer-links-2 {
+    display: flex;
+    padding: 15px 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer-links li {
+    font-size: 16px;
+}
+
+.footer-links div, .footer-links-2 div {
+    padding: 20px 0px;
+    width: 280px;
+}
+
+.footer-links i {
+    color: rgb(197, 138, 27);
+}
+
+.footer-links h2 {
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    font-size: 16px;
+}
+
+#contact-info, #support, #shop, #information, #my-account li{
+    text-align: justify;
+    line-height: 26px;
+}
+
+#support {
+    padding-left: 45px;
+}
+
+#shop {
+    padding-left: 30px;
+}
+
+#contact nav {
+    height: 50px;
+    justify-content: left;
+}
+
+.social-links a {
+    margin-left: 13px;
+}
+
+#newsletter-and-email input:not(:last-child) {
+    background: transparent;
+    width: 250px;
+    height: 45px;
+    color: rgba(245, 245, 220, 0.569);
+    border-radius: 0;
+    border-color: rgba(245, 245, 220, 0.569);
+    border-width: 0.3px;
+    padding-left: 7px;
+    font-size: 15px;
+    background-size: 20px;
+    margin-top: 18px;
+}
+
+#newsletter-and-email h3{
+   color:rgb(223, 184, 112);
+   font-size: 16px;
+}
+
+#newsletter-and-email input:not(:last-child):focus {
+    outline: none !important;
+    border-color: rgba(245, 245, 220, 0.8);
+}
+
+#newsletter-and-email input:not(:last-child)::placeholder {
+    color: rgba(245, 245, 220, 0.569);
+}
+
+#email-submit {
+    background-image: url('../assets/images/send-icon.png');
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 5px;
+    background-color: transparent;
+    border: none;
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-left: -40px;
+    margin-top: -3px;
+}
+
+.footer-credentials {
+    height: 80px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-class {
+    margin-left: 300px;
+}
+
+.card-class i {
+    padding: 0px 15px;
+}

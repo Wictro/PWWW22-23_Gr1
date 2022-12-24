@@ -703,6 +703,7 @@ footer {
     outline: none !important;
     border-color: rgba(245, 245, 220, 0.8);
 }
+
 #newsletter-and-email input:not(:last-child)::placeholder {
     color: rgba(245, 245, 220, 0.569);
 }
@@ -729,6 +730,7 @@ footer {
 #contact-info, #support, #shop, #information, #my-account li{
     text-align: justify;
     line-height: 26px;
+    text-decoration: none;
 }
 
 #shop {
@@ -746,6 +748,10 @@ footer {
 
 .card-class i {
     padding: 0px 15px;
+}
+
+#index-link {
+    color: rgb(197, 138, 27);
 }
 
 

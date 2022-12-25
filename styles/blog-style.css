@@ -3,6 +3,11 @@
     --transparent-black: rgba(0, 0, 0, 0.85);
 }
 
+@font-face {
+    font-family: 'Great Vibes';
+    src: url('../assets/fonts/great-vibes.ttf') format('truetype'); 
+} 
+
 * {
     margin: 0;
     box-sizing: border-box;

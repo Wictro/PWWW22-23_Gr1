@@ -20,7 +20,7 @@ body {
 
 header {
     width: 100%;
-    height: 650px;
+    height: 750px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/blogsHeader.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -38,7 +38,7 @@ header {
 }
 
 .page-title span {
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
  .navbar-logo img {
@@ -105,7 +105,7 @@ nav {
 }
 
 footer {
-    height: 550px;
+    height: 700px;
 }
 
 .footer-background-content {    
@@ -141,10 +141,6 @@ footer {
     justify-content: space-around;
 }
 
-.footer-links li {
-    font-size: 16px;
-}
-
 .footer-links div, .footer-links-2 div {
     padding: 20px 0px;
     width: 280px;
@@ -156,10 +152,12 @@ footer {
 
 .footer-links h2 {
     margin-bottom: 20px;
+    font-size: 26px;
 }
 
 .footer-links li {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 #contact-info, #support, #shop, #information, #my-account li{

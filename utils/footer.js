@@ -1,4 +1,4 @@
-var html = `<div class="footer-background-content">
+var html = `<div class="footer-background-content" style="height: 620px;">
                 <div class="footer-links">
                     <div id="contact-info">
                         <h2>CONTACT INFO</h2>
@@ -59,17 +59,17 @@ var html = `<div class="footer-background-content">
                         </nav>
                     </div>
                     <div id="newsletter-and-email">
-                        <h3 style="text-transform: uppercase; font-family: sans-serif;">NEWSLETTER</h3>
+                        <h3 style="text-transform: uppercase; font-family: sans-serif; font-size: 26px;">NEWSLETTER</h3>
                         <input type="email" placeholder="Your email address" />
                         <button id="email-submit"></button>
                     </div>
                 </div>
                 </div>
                 <div class="footer-credentials" style="background-color: black;">
-                    <p style="color: gray;">@2019 Templates Jungle. All Rights Reserved</p>
-                    <div class="card-class">
+                    <p style="color: gray; font-size: 20px;">@2019 Templates Jungle. All Rights Reserved</p>
+                    <div class="card-class" style="font-size: 20px;">
                         <i class="fa fa-cc-visa" style="color: red;"></i>
-                        <i class="fa fa-cc-mastercard" style="background-color: orange; background-size: cover  ;"></i>
+                        <i class="fa fa-cc-mastercard" style="color: orange; background-size: 100%  ;"></i>
                         <i class="fa fa-cc-amex" style="color: lightblue;"></i>
                     </div>
                 </div>

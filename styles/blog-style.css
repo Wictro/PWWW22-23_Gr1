@@ -267,17 +267,77 @@ ul li a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 60px ;
+    
 }
 
 .blogs .blog {
     width: 22%;
-    height: 400px;
-    border: 1px solid rgb(197, 138, 27);
+    height: 500px;
     margin-bottom: 50px;
+    box-shadow:  5px 5px 5px 5px rgba(168, 168, 168, 0.75);
+    background-color: #4e4f50;
+    border-radius: 10px;
 }
 
-.blog .blog-image {
+.blog figure {
     width: 100%;
     height: 50%;
-    text-align: center;
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('./../assets/images/gallery1.png') no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+figure .blog-image {
+    width: 88%;
+    height: 86%;
+    margin: 4% 6%;
+    opacity: 1;
+    border: 7px groove rgb(84, 84, 84);
+}
+
+figcaption {
+    font-family: 'Great Vibes' , sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin-right: 5px;
+}
+
+.likes-and-comments {
+    height: 50%;
+    margin-top: 0px;
+}
+
+.likes-comments-form {
+    height: 50%;
+}
+
+.likes-comments-form form {
+    margin-top: 20%;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-input {
+    width: 65%;
+    height: 30px;
+    margin-top: 1%;
+}
+
+.comment-input input {
+    width: 100%;
+    height: 100%;
+    background-color: #616263;
+    border-radius: 15px;
+    border-color: #616263;
+    outline:#4e4f50;
+    color: #d8d8d8;
 }

@@ -1,10 +1,33 @@
 const commentExamples = [
     "I can't believe how fresh and tasty these vegetables are. I'm going to have to start buying my produce from this farmer's market.",
     "This meal is absolutely delicious!",
-    "The dish was good, but I think it could have used a little more spice."
+    "The dish was good, but I think it could have used a little more spice.",
+    "This is the best thing I've ever tasted!",
+    "The flavors in this dish are so well balanced, it's really impressive.",
+    "I can't believe how good this is!",
+    "I've never had anything like this before, it's amazing!",
+    "I can't get over how delicious this is, it's incredible.",
+    "This food has great flavor!",
+    "I love the combination of flavors in this dish, it's really unique.",
+    "The portion size of this dish is perfect, not too big or too small.",
+    "This food is so filling and satisfying.",
+    "I love the texture of this dish.",
+    "The sauce on this dish is amazing, it really makes the meal.",
+    "The spices in this meal are perfect.",
+    "The presentation of this dish is really impressive.",
+    "The ingredients in this dish are really fresh and high quality.",
+    "This food is cooked to perfection.",
+    "I'm blown away by the taste and presentation of this dish.",
+    "This is the most flavorful food I've ever had!",
+    "I can't get over how delicious this is, it's truly amazing.",
+    "This food is so satisfying and comforting, it's exactly what I needed.",
+    "I've never had anything like this before, it's truly unique and amazing.",
+    "This is the best meal I've had in a long time, thank you for cooking it for me."
 ]
 
-const peopleNames = [ "Anastasia Horton", "Mia Andrade", "Brianna Benton", "Chiara Ingram", "Rafferty Riddle", "Selina Klein", "Nicholas Brady", "Dana Wade"]
+const peopleNames = [ "Anastasia Horton", "Mia Andrade", "Brianna Benton", "Chiara Ingram", "Rafferty Riddle", "Selina Klein", "Nicholas Brady", "Dana Wade",
+                      "Isobel Boyer", "Neil Nixon", "Zackary Hall", "Pearl Sawyer", "Arun Mahoney", "Henri Cervantes", "Mollie Davila", "Mohammad Gutierrez",
+                      "Shania Berg", "Olivier Harmon", "Talia Yoder", "Sebastian Rowe", "Xavier Carter", "Nicolas Willis", "Anton Doherty", "Minnie Hale"]
 
 const blogComments = document.getElementById("blog-comments-1")
 const commentsContent = '<div style="display:flex; flex-wrap: wrap; ">'+ 

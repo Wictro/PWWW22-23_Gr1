@@ -28,6 +28,19 @@ header {
     opacity: 0.92;
 }
 
+.page-title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 12%;
+    font-weight: 500;
+}
+
+.page-title span {
+    text-decoration: underline;
+}
+
  .navbar-logo img {
     width: 50px;
     height: 50px;
@@ -196,7 +209,7 @@ footer {
 }
 
 #newsletter-and-email input:not(:last-child)::placeholder {
-    color: rgba(245, 245, 220, 0.569);
+    color: #23231F;
 }
 
 #email-submit {
@@ -247,7 +260,7 @@ ul li a {
 
 .section-title h4 {
     font-size: 35px;
-    margin-top: 5px 0px;
+    margin-top: 5px;
     font-weight: 100;
 }
 
@@ -280,33 +293,68 @@ ul li a {
     height: 500px;
     margin-bottom: 50px;
     box-shadow:  5px 5px 5px 5px rgba(168, 168, 168, 0.75);
-    background-color: #4e4f50;
+    background-color: rgba(197, 138, 27, 0.034);
     border-radius: 10px;
 }
 
 .blog figure {
     width: 100%;
     height: 50%;
-    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url('./../assets/images/gallery1.png') no-repeat;
     background-size: cover;
     position: relative;
     margin-bottom: 0;
 }
 
+.fig-1 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery1.png') no-repeat;
+}
+.fig-2 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery3.png') no-repeat;
+}
+.fig-3 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery4.png') no-repeat;
+}
+.fig-4 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery5.png') no-repeat;
+}
+.fig-5 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery6.png') no-repeat;
+}
+.fig-6 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery7.png') no-repeat;
+}
+.fig-7 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery8.png') no-repeat;
+}
+.fig-8 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery9.jpg') no-repeat;
+}
+.fig-9 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery10.png') no-repeat;
+}
+.fig-10 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery11.jpg') no-repeat;
+}
+.fig-11 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery12.jpg') no-repeat;
+}
+.fig-12 {
+    background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url('./../assets/images/gallery13.jpg') no-repeat;
+}
 
 figure .blog-image {
     width: 88%;
     height: 86%;
     margin: 4% 6%;
     opacity: 1;
-    border: 7px groove rgb(84, 84, 84);
+    border: 7px groove rgba(151, 151, 151, 0.27);
 }
 
 figcaption {
     font-family: 'Great Vibes' , sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: white;
+    color: gray;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -317,32 +365,37 @@ figcaption {
 .likes-and-comments {
     height: 50%;
     margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .likes-comments-form {
-    height: 50%;
+    height: 23%;
 }
 
-.likes-comments-form form {
-    margin-top: 20%;
+.likes-comments-form form { 
     margin-left: 1%;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .comment-input {
     width: 65%;
     height: 30px;
-    margin-top: 1%;
 }
 
 .comment-input input {
     width: 100%;
     height: 100%;
-    background-color: #616263;
+    margin-top: 5px;
+    background-color: rgba(197, 138, 27, 0.2);
     border-radius: 15px;
-    border-color: #616263;
+    border-color: rgb(197, 138, 27);
     outline:#4e4f50;
-    color: #d8d8d8;
+    color: #23231F;
 }

@@ -249,7 +249,7 @@ table {
     border-spacing: 40px;
     
 }
-tbody tr td ol {
+tbody tr td ol:first-child {
     list-style-type: upper-latin;
     padding: 4% 0% 4% 10% ;
 }
@@ -292,7 +292,23 @@ tbody tr {
     margin-bottom: 10px;
 }
 
-td:nth-child(odd) {
+td:nth-child(odd):not(:first-child) {
     background-color: rgba(232, 213, 194, 0.398);
 }
 
+.add-cancel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 10vw;
+}
+
+.add-cancel button {
+    background: none;
+    border: none;
+}
+
+.add-cancel button:focus {
+   opacity: 0.8;
+}

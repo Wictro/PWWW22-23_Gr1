@@ -207,7 +207,7 @@ footer {
 }
 
 #newsletter-and-email input:not(:last-child)::placeholder {
-    color: #23231F;
+    color: rgba(245, 245, 220, 0.569);
 }
 
 #email-submit {

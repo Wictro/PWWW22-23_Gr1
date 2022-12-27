@@ -1,3 +1,4 @@
+
 :root {
     --light-orange-button-color: rgba(227, 179, 89, 0.946);
     --transparent-black: rgba(0, 0, 0, 0.85);
@@ -17,21 +18,58 @@ body {
     background-color: #f5f5f5;
 }
 
-.menu-title {
+.title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
-    color: orange;
-    padding-top: 60px;
-    font-size: 36px;
-    letter-spacing: 1px;
-    height: 250px;
+    width: 40%;
+    height: 150px;
+    background-color: white;
 }
 
-.menu-title h3 {
-    border-width: 1px 0;
-    border-style: solid;
+.title-container h3 {
+    font-size: 28px;
+    color: var(--transparent-black);
+}
+
+.menu-title-salads {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../assets/images/category-salads.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu-title-pastas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../assets/images/category-pastas.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu-title-meats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../assets/images/category-meats.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.menu-title-pizzas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../assets/images/category-pizzas.jpg');
+    background-size: cover;
+    background-position: center center;
 }
 
 header {
@@ -136,64 +174,64 @@ footer {
     content: "";
     filter: brightness(100%);
     transition: all .2s linear;
-}
-
-.footer-links {
+   }
+   
+   .footer-links {
     display: flex;
     padding: 15px 10px;
     width: 100%;
     justify-content: center;
     height: 50%;
-}
-
-.footer-links-2 {
+   }
+   
+   .footer-links-2 {
     display: flex;
     padding: 15px 10px;
     width: 100%;
     justify-content: space-around;
-}
-
-.footer-links li {
+   }
+   
+   .footer-links li {
     font-size: 20px;
     line-height: 32px;
-}
-
-.footer-links div, .footer-links-2 div {
+   }
+   
+   .footer-links div, .footer-links-2 div {
     padding: 20px 0px;
     width: 280px;
-}
-
-.footer-links i {
+   }
+   
+   .footer-links i {
     color: rgb(197, 138, 27);
-}
-
-.footer-links h2 {
+   }
+   
+   .footer-links h2 {
     margin-bottom: 20px;
     font-size: 26px;
-}
-
-#contact-info, #support, #shop, #information, #my-account li{
+   }
+   
+   #contact-info, #support, #shop, #information, #my-account li{
     text-align: justify;
-}
-
-#support {
+   }
+   
+   #support {
     padding-left: 45px;
-}
-
-#shop {
+   }
+   
+   #shop {
     padding-left: 30px;
-}
-
-#contact nav {
+   }
+   
+   #contact nav {
     height: 50px;
     justify-content: left;
-}
-
-.social-links a {
+   }
+   
+   .social-links a {
     margin-left: 13px;
-}
-
-#newsletter-and-email input:not(:last-child) {
+   }
+   
+   #newsletter-and-email input:not(:last-child) {
     background: transparent;
     width: 250px;
     height: 45px;
@@ -205,23 +243,23 @@ footer {
     font-size: 15px;
     background-size: 20px;
     margin-top: 18px;
-}
-
-#newsletter-and-email h3{
-   color:rgb(223, 184, 112);
-   font-size: 16px;
-}
-
-#newsletter-and-email input:not(:last-child):focus {
+   }
+   
+   #newsletter-and-email h3{
+    color:rgb(223, 184, 112);
+    font-size: 16px;
+   }
+   
+   #newsletter-and-email input:not(:last-child):focus {
     outline: none !important;
     border-color: rgba(245, 245, 220, 0.8);
-}
-
-#newsletter-and-email input:not(:last-child)::placeholder {
+   }
+   
+   #newsletter-and-email input:not(:last-child)::placeholder {
     color: rgba(245, 245, 220, 0.569);
-}
-
-#email-submit {
+   }
+   
+   #email-submit {
     background-image: url('../assets/images/send-icon.png');
     background-repeat: no-repeat;
     background-size: 23px;
@@ -234,87 +272,87 @@ footer {
     height: 30px;
     margin-left: -40px;
     margin-top: -3px;
-}
-
-.footer-credentials {
+   }
+   
+   .footer-credentials {
     height: 80px;
     display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
-}
-
-.card-class {
+   }
+   
+   .card-class {
     margin-left: 300px;
-}
-
-.card-class i {
+   }
+   
+   .card-class i {
     padding: 0px 15px;
-}
-
-ul li {
+   }
+   
+   ul li {
     list-style-type: none;
-}
-
-ul li a {
+   }
+   
+   ul li a {
     text-decoration: none;
     color: var(--transparent-black);
-}
-
-.menu {
+   }
+   
+   .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-align: left;
-}
-
-.container {
+   }
+   
+   .container {
     margin-top: 100px;
     width: 100%;
-}
-
-.menu-items span {
+   }
+   
+   .menu-items span {
     color: #10101b;
-}
-
-.menu-items{
+   }
+   
+   .menu-items{
     margin: 20px 20px 20px 20px;
-}
-
-.menu-items li strong, .menu-items li span {
+   }
+   
+   .menu-items li strong, .menu-items li span {
     position: relative;
     z-index: 1000;
     background-color: #f5f5f5;
-}
-
-.menu-items li {
+   }
+   
+   .menu-items li {
     font-size: 18px;
     line-height: 2;
     height: 22px;
     margin-top: 20px;
-}
-
-.starters-menu {
+   }
+   
+   .starters-menu {
     width: 45%;
-}
-
-#price {
+   }
+   
+   #price {
     position: relative;
     color: rgb(197, 138, 27);
     float: right;
     z-index: 500;
-}
-
-.price-separator {
+   }
+   
+   .price-separator {
     position: relative;
     font-size: 15px;
     opacity: 0.85;
     height: 5px;
     padding-top: 15px;
     margin-top: -1px;
-}
-
-.price-separator::before {
+   }
+   
+   .price-separator::before {
     content: '';
     border-top: 1px dashed rgb(197, 138, 27);
     position: absolute;
@@ -322,4 +360,4 @@ ul li a {
     top: 0;
     left: 0;
     opacity: 0.65;
-}
+   }

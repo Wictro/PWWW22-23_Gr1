@@ -261,7 +261,7 @@ ul li a {
     color: var(--transparent-black);
 }
 
-.starter {
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -273,21 +273,21 @@ ul li a {
     width: 100%;
 }
 
-.starters span {
+.menu-items span {
     color: #10101b;
 }
 
-.starters {
+.menu-items{
     margin: 20px 20px 20px 20px;
 }
 
-.starters li strong, .starters li span {
+.menu-items li strong, .menu-items li span {
     position: relative;
     z-index: 1000;
     background-color: #f5f5f5;
 }
 
-.starters li {
+.menu-items li {
     font-size: 18px;
     line-height: 2;
     height: 22px;

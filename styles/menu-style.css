@@ -28,8 +28,11 @@ body {
 }
 
 .title-container h3 {
-    font-size: 28px;
-    color: var(--transparent-black);
+    font-family: sans-serif;
+    color: rgb(197, 138, 27);
+    font-size: 32px;
+    border-width: 1px 0;
+    border-style: solid;
 }
 
 .menu-title-salads {
@@ -308,6 +311,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    padding-top: 15px;
+    padding-bottom: 90px;
    }
    
    .container {

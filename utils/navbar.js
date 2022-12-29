@@ -11,9 +11,9 @@ var navbar = `<a href="index.html" style="text-decoration: none; display: flex;"
                     <a href="visitUs.html" id="visitUs-link">VISIT US</a>
                 </ul>
                 <ul class="social-links">
-                    <a href="https://www.facebook.com" id="facebook-link"><i class="fa fa-facebook icon" style="color: white;"></i></a>
-                    <a href="https://www.twitter.com" id="twitter-link"><i class="fa fa-twitter icon" style="color: white;"></i></a>
-                    <a href="https://www.instagram.com" id="instagram-link"><i class="fa fa-instagram icon" style="color: white;"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" id="facebook-link"><i class="fa fa-facebook icon" style="color: white;"></i></a>
+                    <a href="https://www.twitter.com" id="twitter-link" target="_blank"><i class="fa fa-twitter icon" style="color: white;"></i></a>
+                    <a href="https://www.instagram.com" id="instagram-link" target="_blank"><i class="fa fa-instagram icon" style="color: white;"></i></a>
                 </ul>
 `;
 

@@ -1,4 +1,4 @@
-var html = `<div class="footer-background-content" style="height: 620px;">
+var html = `<div class="footer-background-content" style="height: 620px; padding-left: 20px;">
                 <div class="footer-links">
                     <div id="contact-info">
                         <h2>CONTACT INFO</h2>

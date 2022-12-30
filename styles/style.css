@@ -337,6 +337,28 @@ nav {
     margin-right: auto;
 }
 
+.blogs {
+    display: block;
+    height: 85%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blogs div {
+    width: 80%;
+}
+
+.blogs div:last-child {
+    padding-top: 20px;
+}
+
+.blog {
+    height: 50%;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
 /* #newsletter-and-email {
     background-color: var(--transparent-black);
 } */

@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="styles/reservations-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="utils/backgroundTiming.js" type="text/JavaScript"></script>
+    <script>
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementsByName("date")[0].setAttribute('min', today);
+        function handleSave() {
+            var date = document.querySelector(`input[name="date"]`).value
+            var time = document.querySelector(`input[name="time"]`).value
+            var people = document.querySelector(`input[name="peopleNumber"]`).value
+
+            if (date === "" || time === "" || people === "" || people < 1 || people > 99) {
+                alert("Something went wrong! Please check the data inputs")
+                throw new Error("Something went wrong! Please check the data inputs")
+            }
+            else {
+                alert("Reservation was successful!")
+                localStorage.setItem('date', date.toString())
+                localStorage.setItem('time', time.toString())
+                localStorage.setItem('people', people.toString())
+            }
+
+            console.log(date)
+            console.log(time)
+            console.log(people)
+        }
+    </script>
     <title>Reservations</title>
 </head>
 
@@ -25,7 +49,7 @@
     <div class="form-container">
         <div class="reservation-form">
             <div class="form-submenu">
-                <div class="title-form"><h4 style="font-size: 38px; color: rgb(27, 23, 23);">HungerHunt Restaurant Reservation</h4></div>
+                <div class="title-form"><h4 style="font-size: 38px; color: rgb(197, 138, 27); font-style: italic;">HungerHunt Restaurant Reservation</h4></div>
                 <div class="title-form"><p style="font-size: 20px; color: rgb(14, 45, 102);">+383548454648456</p></div>
             </div>
             <div class="reservation-mid">
@@ -62,14 +86,14 @@
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="input-element">
-                            <input type="number" name="peopleNumber"/>
+                            <input type="number" name="peopleNumber" min="1" max="99"/>
                         </div>
                     </div>
                     </br>
                 </form>
             </div>
             <div class="form-submenu">
-                <div class="reservation-button"><input type="submit" id="submit-reservation"/></div>
+                <div class="reservation-button"><button id="submit-reservation" onclick="handleSave()">Submit</button></div>
             </div>
         </div>
     </div>

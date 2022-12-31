@@ -63,7 +63,7 @@ header div {
     font-family: "Great Vibes", "cursive", sans-serif;
     /* text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px; */
     font-size: 40px;
-    padding: 2.5px;
+    padding: 10px;
     font-weight: 300;
 }
 
@@ -73,7 +73,8 @@ header div {
 
 .bold-title {
     text-transform: uppercase;
-    font-size: 30px ;
+    font-size: 30px;
+    padding: 1.5px;
 }
 
 ul li {
@@ -430,10 +431,6 @@ nav {
     align-items: center;
 }
 
-.bold-title {
-    padding: 1.5px;
-}
-
 .open-weekdays {
     margin-bottom: 30px;
 }
@@ -497,6 +494,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    margin-top: 10px;
 }
 
 #menu-container div:first-child {
@@ -579,6 +577,8 @@ nav {
 .blogs {
     height: 70%;
     display: flex;
+    padding-bottom: 20px;
+    margin-top: 10px;
 }
 
 .blogs div {

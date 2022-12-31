@@ -37,7 +37,7 @@ header div {
 
 .navbar {
     background-color: var(--transparent-black);
-    /* position: fixed; */
+    position: fixed;
     top: 0px;
     z-index: 10000;
     display: flex;
@@ -337,28 +337,6 @@ nav {
     margin-right: auto;
 }
 
-.blogs {
-    display: block;
-    height: 85%;
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-.blogs div {
-    width: 80%;
-}
-
-.blogs div:last-child {
-    padding-top: 20px;
-}
-
-.blog {
-    height: 50%;
-    padding: 10px;
-    display: inline-block;
-    margin: 0 auto;
-}
-
 /* #newsletter-and-email {
     background-color: var(--transparent-black);
 } */
@@ -378,20 +356,12 @@ nav {
 }
 
 .featured-dishes-container span {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 200px;
     font-size: 50px;
     color: lightgray;
     height: 50px;
     padding: 10px;
-}
-
-.featured-dishes-container .left-arrow{
-    left: -80px;
-}
-
-.featured-dishes-container .right-arrow{
-    right: -80px;
 }
 
 .featured-dishes-container h2 {
@@ -793,6 +763,7 @@ footer {
 
 #gallery {
     margin-bottom: 50px;
+    padding-right: 20px;
 }
 
 
@@ -826,10 +797,9 @@ footer {
         margin: auto;
     }
 
-    header .social-links {
-        width: 0;
-        height: 0;
-    }
+    #blog-link, #shop-link, #contact-link, header .social-links {
+        display: none;
+    } 
 }
 
 @media screen and (max-width: 850px) {
@@ -859,31 +829,80 @@ footer {
     }
 
     #about-us {
-        display: inline-block;
+        display: block;
         margin-top: 150px;
         margin-bottom: 35px;
-        margin-left: auto;
-        margin-right: auto;
         text-align: center;
-        flex-direction: row;
-        align-items: center;
     }
 
     #featured-dishes {
         margin-top: 10px;
     }
 
-    .section-title-about {
-        width: 100%;
+    .featured-dishes-container > div:nth-child(2) {
+        display: none;
     }
 
-    .section-title-about img {
-        width: 600px;
+    .blogs {
+        display: block;
+        height: 85%;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    
+    .blogs div {
+        width: 80%;
+    }
+    
+    .blogs div:last-child {
+        padding-top: 20px;
+    }
+    
+    .blog {
+        height: 50%;
+        padding: 10px;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .gallery-photos {
+        height: 200px;
+    }
+
+    .gallery-photos table {
+        height: 100%;
+    }
+
+    .gallery-photos > table > tbody > tr:last-child {
+        display: none;
+    }
+
+    .section-title-about {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .book {
+        display: none;
     }
 }
 
 @media screen and (max-width: 670px) {
     #black-background {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 582px) {
+    #index-link, #reservations-link, #menu-link {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .featured-dishes-container > div:nth-child(3) {
+        display: none;
     }
 }

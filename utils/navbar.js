@@ -8,6 +8,7 @@ var navbar = `<a href="index.html" style="text-decoration: none; display: flex;"
                     <a href="blog.html" id="blog-link">BLOG</a>
                     <a href="shop.html" id="shop-link">SHOP</a>
                     <a href="contact.html" id="contact-link">CONTACT</a>
+                    <a href="visitUs.html" id="visitUs-link">VISIT US</a>
                 </ul>
                 <ul class="social-links">
                     <a href="https://www.facebook.com" id="facebook-link"><i class="fa fa-facebook icon" style="color: white;"></i></a>

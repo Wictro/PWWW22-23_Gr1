@@ -1,7 +1,7 @@
 var listOfAudios  = document.getElementById("list-audios")
 var dropArea  = document.getElementById("div2")
 
-document.getElementById("delete-button").addEventListener("click", () => {
+document.getElementById("send-button").addEventListener("click", () => {
     listOfAudios.innerHTML = `<ul>
     <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
             <div draggable="true" ondragstart="drag(event)" id="drag1">

@@ -9,13 +9,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Visit Us</title>
     <script>
-        var dropToNewPlace = 0;
+        var adjacent = false;
         function allowDrop(ev) {
             ev.preventDefault();
         }
 
         function drag(ev) {
-            dropToNewPlace++;
             ev.dataTransfer.setData("text", ev.target.id);
         }
 
@@ -24,11 +23,13 @@
             var data = ev.dataTransfer.getData("text");
             const element = document.getElementById(data);
             const currentPosition = element.getBoundingClientRect();
-            if ((dropToNewPlace % 2) === 0) {
+            if (adjacent) {
                 ev.target.insertAdjacentElement("beforebegin", element);
+                adjacent = false
             }
             else {
                 event.target.appendChild(element);
+                adjacent = true
             }
 
         }
@@ -61,43 +62,44 @@
     </div>
     <div class="audios">
         <div class="section-title">
-            <h4>Suggest us a song</h4>
+            <h4>Your entertainment is our goal</h4>
+            <h5>Help us by suggesting your favorite song</h6>
         </div>
         <div class="audios-content">
             <div id="list-audios">
                 <ul>
-                    <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div draggable="true" ondragstart="drag(event)" id="drag1">
-                            <audio controls>
+                    <li>
+                        <div id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <audio draggable="true" ondragstart="drag(event)" id="drag1" controls>
                                 <source src="./assets/audios/audio1.mp3" type="audio/mp3" />
                             </audio>
                         </div>
                     </li>
-                    <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div draggable="true" ondragstart="drag(event)" id="drag2">
-                            <audio controls>
+                    <li>
+                        <div id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <audio draggable="true" ondragstart="drag(event)" id="drag2" controls>
                                 <source src="./assets/audios/audio2.mp3" type="audio/mp3" />
                             </audio>
                         </div>
                     </li>
-                    <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div draggable="true" ondragstart="drag(event)" id="drag3">
-                            <audio controls>
+                    <li>
+                        <div id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <audio draggable="true" ondragstart="drag(event)" id="drag3" controls>
                                 <source src="./assets/audios/audio3.mp3" type="audio/mp3" />
                             </audio>
                         </div>
                     </li>
-                    <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div draggable="true" ondragstart="drag(event)" id="drag4">
-                            <audio controls>
+                    <li>
+                        <div id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <audio draggable="true" ondragstart="drag(event)" id="drag4" controls>
                                 <source src="./assets/audios/audio4.mp3" type="audio/mp3" />
                             </audio>
                         </div>
                     </li>
-                    <li id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div draggable="true" ondragstart="drag(event)" id="drag4">
-                            <audio controls>
-                                <source src="./assets/audios/audio4.mp3" type="audio/mp3" />
+                    <li>
+                        <div id="audio" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <audio draggable="true" ondragstart="drag(event)" id="drag5" controls>
+                                <source src="./assets/audios/audio5.mp3" type="audio/mp3" />
                             </audio>
                         </div>
                     </li>
@@ -105,7 +107,7 @@
             </div>
             <div class="drop-area">
                 <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                <button id="delete-button"></button>
+                <button id="send-button"><img src="./assets/images/addSong.png"/></button>
                 <script src="./utils/deleteSelectedAudio.js" type="text/javascript"></script>
             </div>
         </div>

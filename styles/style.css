@@ -232,6 +232,10 @@ i{
     background-color: white;
 }
 
+.input-wrapper {
+    font-size: 18px;
+}
+
 .form input {
     height: 42px;
     padding: 1em;
@@ -277,8 +281,25 @@ img:hover {
     width: 100%;
 }
 
-.book span {
-    
+input[type="date"]{
+    background-color: #d7e3f0;
+    padding: 15px;
+    font-family: "Roboto Mono",monospace;
+    color: #796c6c;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+::-webkit-calendar-picker-indicator{
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+input[type="time"] {
+    font-size: 18px;
+    background-color: #dbd3d3;
 }
 
 nav {

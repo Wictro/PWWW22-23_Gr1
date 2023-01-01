@@ -62,7 +62,7 @@
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
                         <div class="input-element">
-                            <input type="date" name="date"/>
+                            <input type="date" name="date" style="padding-left: 8px;"/>
                         </div>
                     </div>
                     </br>
@@ -86,7 +86,23 @@
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
                         <div class="input-element">
-                            <input type="number" name="peopleNumber" min="1" max="99"/>
+                            <input list="numbers" name="people" id="peopleOptions" placeholder="Number of people">
+                            <datalist id="numbers">
+                                <option>1 Person</option>
+                                <option>2 People</option>
+                                <option>3 People</option>
+                                <option>4 People</option>
+                                <option>5 People</option>
+                                <option>6 People</option>
+                                <option>7 People</option>
+                                <option>8 People</option>
+                                <option>9 people</option>
+                                <option>10 people</option>
+                                <option>15 people</option>
+                                <option>20 people</option>
+                                <option>30 people</option>
+                                <option>50 people</option>
+                            </datalist>
                         </div>
                     </div>
                     </br>

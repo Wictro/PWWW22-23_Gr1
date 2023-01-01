@@ -779,7 +779,7 @@ footer {
 
 #gallery {
     margin-bottom: 50px;
-    padding-right: 20px;
+    padding-right: 3px;
 }
 
 
@@ -899,7 +899,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 712px) {
     .book {
         display: none;
     }

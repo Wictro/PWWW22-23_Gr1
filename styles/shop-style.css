@@ -292,6 +292,8 @@
     vertical-align: center;
     font-size: 40px;
     font-family: 'Great Vibes', sans-serif;
+    word-wrap: break-word;
+    word-break: keep-all;
    }
    
    tbody tr {

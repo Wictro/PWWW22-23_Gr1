@@ -303,6 +303,7 @@ ul li a {
     text-align: center;
     border: 1px solid white;
     font-size: 18px;
+    transform: rotateX(2deg);
 }
 
 .reservation-mid {
@@ -335,6 +336,7 @@ ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: rotateY(0.1deg);
 }
 
 .icon i {

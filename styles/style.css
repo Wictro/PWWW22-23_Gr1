@@ -267,14 +267,14 @@ i{
     text-align: center;
 }
 
-/* img:hover {
+img:hover {
     transition-property: all;
-    transition-duration: 2s;
+    transition-duration: 0.32s;
     transition-timing-function: ease;
     transition-delay: 0s;
-    transform: scale(1.1);
+    transform: scale(1.01);
     box-sizing: border-box;
-} */
+}
 
 .book {
     display: grid;

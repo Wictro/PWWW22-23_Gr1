@@ -5,8 +5,8 @@
 
 @font-face {
     font-family: 'Great Vibes';
-    src: url('../assets/fonts/great-vibes.ttf') format('truetype'); 
-} 
+    src: url('../assets/fonts/great-vibes.ttf') format('truetype');
+}
 
 * {
     margin: 0;
@@ -21,7 +21,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/homeBackground.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/visitUsBackground.jpeg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -44,7 +44,7 @@ header {
     /* text-decoration: underline; */
 }
 
- .navbar-logo img {
+.navbar-logo img {
     width: 50px;
     height: 50px;
     margin-top: auto;
@@ -82,7 +82,7 @@ header {
 }
 
 #header-title {
-    font-family: 'Great Vibes' , sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     color: rgb(197, 138, 27);
     font-size: 32px;
     margin-top: 5px;
@@ -112,7 +112,7 @@ footer {
     height: 700px;
 }
 
-.footer-background-content {    
+.footer-background-content {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/footer-background.jpeg");
     height: 470px;
     background-repeat: no-repeat;
@@ -120,7 +120,9 @@ footer {
     background-size: 100% 100%;
 }
 
-.footer-background-content h2, .footer-background-content li, .footer-background-content a {
+.footer-background-content h2,
+.footer-background-content li,
+.footer-background-content a {
     color: white;
 }
 
@@ -145,7 +147,8 @@ footer {
     justify-content: space-around;
 }
 
-.footer-links div, .footer-links-2 div {
+.footer-links div,
+.footer-links-2 div {
     padding: 20px 0px;
     width: 280px;
 }
@@ -164,7 +167,11 @@ footer {
     line-height: 32px;
 }
 
-#contact-info, #support, #shop, #information, #my-account li{
+#contact-info,
+#support,
+#shop,
+#information,
+#my-account li {
     text-align: justify;
     line-height: 26px;
 }
@@ -200,9 +207,9 @@ footer {
     margin-top: 18px;
 }
 
-#newsletter-and-email h3{
-   color:rgb(223, 184, 112);
-   font-size: 16px;
+#newsletter-and-email h3 {
+    color: rgb(223, 184, 112);
+    font-size: 16px;
 }
 
 #newsletter-and-email input:not(:last-child):focus {
@@ -236,6 +243,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 ul li {
     list-style-type: none;
 }
@@ -255,7 +263,7 @@ ul li a {
 
 .section-title {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -268,12 +276,12 @@ ul li a {
 .audios {
     margin-top: 2%;
     margin: 5%;
+    border: 5px solid rgb(197, 138, 27);
 }
 
 .audios-content {
-    margin-top: 3%;
+    margin-top: 1%;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -281,20 +289,20 @@ ul li a {
 
 #list-audios {
     width: 35%;
-    margin: 3% 2%;
-    height: 200px;
+    margin: 2% 0% 3% 4%;
+    height: 250px;
     overflow-y: scroll;
-    border: 1px solid black;
+    border: 3px solid ;
+    border-image: linear-gradient(#1f267c, #4867a8) 30;
 }
 
 .drop-area {
     margin: 2%;
     width: 55%;
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+
 }
 
 .drop-area div {
@@ -313,7 +321,81 @@ ul li a {
 audio {
     width: 100%;
 }
- 
+
 li {
     width: 100%;
+}
+
+.welcome-video-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.welcome-video {
+    width: 50%;
+    border: 5px solid rgb(197, 138, 27);
+}
+
+.welcome-video video {
+    margin: 0.5% 0.2% 3.5% 2%;
+    width: 96%;
+    height: 96%;
+}
+
+.welcome-text {
+    margin: 10% 0% 10% 5%;
+    width: 45%;
+    border-style: solid;
+    border-image-source: url('./../assets/images/border-image.png');
+    border-image-slice: 30;
+    border-image-width: 35px;
+}
+
+.welcome-text div {
+    margin-top: 7%;
+}
+
+.welcome-text div h4 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 45px;
+}
+
+.menu-video-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.menu-video {
+    width: 50%;
+    border: 5px solid rgb(197, 138, 27);
+}
+
+.menu-video video {
+    margin: 0.5% 0.2% 3.5% 2%;
+    width: 96%;
+    height: 96%;
+}
+
+.menu-text {
+    margin: 10% 5% 10% 0%;
+    width: 45%;
+    border-style: solid;
+    border-image-source: url('./../assets/images/border-image.png');
+    border-image-slice: 30;
+    border-image-width: 35px;
+}
+
+.menu-text div {
+    margin-top: 7%;
+}
+
+.menu-text div h4 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 45px;
 }

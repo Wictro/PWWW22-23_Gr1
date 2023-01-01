@@ -19,26 +19,21 @@
    
    header {
     width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/homeBackground.jpg);
-    background-repeat: no-repeat;
+    height: 750px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/shopBackground.png') center bottom repeat, 
+    url("../assets/images/shopBackground1.jpg") repeat top left ;
+    background-size: 20%;
     background-attachment: scroll;
-    background-size: cover;
-    opacity: 0.92;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
-}
+    opacity: 0.92; 
+   }
 
-.page-title {
+   .page-title {
     color: white;
     font-family: sans-serif;
     font-size: 100px;
     text-align: center;
     font-weight: 500;
+    padding-top: 20%;
 }
    
    .navbar-logo img {

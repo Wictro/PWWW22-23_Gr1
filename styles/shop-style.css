@@ -65,9 +65,8 @@
    
    .navbar {
     background-color: var(--transparent-black);
-    position: fixed;
-    top: 0px;
-    z-index: 10000;
+    position: absolute;
+    top: 0;
     display: flex;
     width: 100%;
 }

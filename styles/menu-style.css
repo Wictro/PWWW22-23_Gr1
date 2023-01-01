@@ -43,6 +43,7 @@ body {
     background-image: url('../assets/images/category-salads.jpg');
     background-size: cover;
     background-position: center center;
+    transform: translate3d(0, -15.57px, 0)
 }
 
 .menu-title-pastas {
@@ -121,9 +122,8 @@ header {
 
 .navbar {
     background-color: var(--transparent-black);
-    position: fixed;
-    top: 0px;
-    z-index: 10000;
+    position: absolute;
+    top: 0;
     display: flex;
     width: 100%;
 }

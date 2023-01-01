@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <script src="signupValidation.js" type="text/JavaScript"></script>
         <style>
         body {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/homeBackground.jpg);
@@ -50,15 +51,15 @@
         </style>
       </head>
       <body>
-        <form>
+        <form id="signup-form">
           <h2>Sign Up</h2>
           <label for="name">Name:</label><br>
           <input type="text" id="name" name="name"><br>
           <label for="username">Username:</label><br>
           <input type="text" id="username" name="username"><br>
           <label for="gender">Gender:</label><br>
-          <input type="radio" id="gender" name="gender" value="male">Male
-          <input type="radio" id="gender" name="gender" value="female">Female<br>
+          <input type="radio" id="genderMale" name="gender" value="male">Male
+          <input type="radio" id="genderFemale" name="gender" value="female">Female<br>
           <label for="email">Email:</label><br>
           <input type="email" id="email" name="email"><br>
           <label for="password">Password:</label><br>

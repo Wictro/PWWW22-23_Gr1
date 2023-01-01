@@ -21,6 +21,8 @@ header {
     width: 100%;
     height: 100vh;
     background: -webkit-radial-gradient(bottom right, #91cc98, #0a2455);
+    background: -moz-radial-gradient(bottom right, #91cc98, #0a2455);
+    background: radial-gradient(bottom right, #91cc98, #0a2455);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -35,9 +37,21 @@ header {
 }
 
 @keyframes changeBackgroundColor {
-    0% {background: -webkit-radial-gradient(bottom right, #91cc98, #0a2455);}
-    50% {background: -webkit-radial-gradient(bottom right, #91cc45, orange);}
-    100% {background: -webkit-radial-gradient(bottom right, #91cc45, red);}
+    0% {
+        background: -webkit-radial-gradient(bottom right, #91cc98, #0a2455);
+        background: -moz-radial-gradient(bottom right, #91cc98, #0a2455);
+        background: radial-gradient(bottom right, #91cc98, #0a2455);
+    }
+    50% {
+        background: -webkit-radial-gradient(bottom right, #91cc45, orange);
+        background: -moz-radial-gradient(bottom right, #91cc45, orange);
+        background: radial-gradient(bottom right, #91cc45, orange);
+    }
+    100% {
+        background: -webkit-radial-gradient(bottom right, #91cc45, red);
+        background: -moz-radial-gradient(bottom right, #91cc45, red);
+        background: radial-gradient(bottom right, #91cc45, red);
+    }
 }
 
 .page-title {

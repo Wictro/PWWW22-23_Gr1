@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2023-01-01 v1.0.0
+/blog-style.css
+/navbar.js
+/footer.js
+
+NETWORK:
+*
+
+FALLBACK:
+/html/ /blog.html

@@ -162,6 +162,11 @@ i{
     margin-top: 20px;
 }
 
+#book-button:hover {
+    background-color: rgb(46, 38, 38);
+    cursor: pointer;
+}
+
 #view-button{
     color: white;
     text-align: center;
@@ -176,6 +181,7 @@ i{
 #view-button:hover {
     color: rgb(197, 138, 27);
     bottom: 3px;
+    cursor: pointer;
 }
 
 #blogs-button{
@@ -190,6 +196,7 @@ i{
 #blogs-button:hover {
     color: rgb(197, 138, 27);
     bottom: 3px;
+    cursor: pointer;
 }
 
 #booking {
@@ -201,6 +208,13 @@ i{
     padding: 12px 12px;
     font-weight: bold;
     border-style: none;
+    height: 100%;
+    width: 230px;
+}
+
+#booking:hover {
+    background-color: rgb(201, 131, 10);
+    cursor: pointer;
 }
 
 #header-title {
@@ -276,12 +290,36 @@ img:hover {
 }
 
 .book {
-    display: grid;
-    justify-content: center;
+    display: flex;
     width: 100%;
+    font-size: 21px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 60px;
 }
 
-input[type="date"]{
+.book-section-container {
+    display: flex;
+    margin: 0 auto;
+    background-color: white;
+    align-items: center;
+    width: 590px;
+    height: 100%;
+}
+
+.book-section-container p {
+    height: 24px;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 15px;
+    -moz-column-gap: 15px;
+    column-gap: 15px;
+    -webkit-column-rule: 1px solid lightgrey;
+    -moz-column-rule: 1px solid lightgrey;
+    column-rule: 1px solid lightgrey;
+}
+
+/* input[type="date"]{
     background-color: #d7e3f0;
     padding: 15px;
     font-family: "Roboto Mono",monospace;
@@ -300,7 +338,7 @@ input[type="date"]{
 input[type="time"] {
     font-size: 18px;
     background-color: #dbd3d3;
-}
+} */
 
 nav {
     width: 100%;
@@ -800,6 +838,12 @@ footer {
 @media screen and (max-width: 1120px) {
     footer {
         width: 1110px;
+    }
+}
+
+@media screen and (max-width: 1058px) {
+    #visitUs-link {
+        display: none;
     }
 }
 

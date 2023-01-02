@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <script src="signupValidation.js" type="text/JavaScript"></script>
         <style>
         body {
             background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/homeBackground.jpg);
@@ -43,32 +42,40 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 18px;
         }
     
         input[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+        #sign-in-link {
+          text-decoration: none;
+          color: rgb(23, 23, 117);
         }
         </style>
       </head>
       <body>
         <form id="signup-form">
           <h2>Sign Up</h2>
-          <label for="name">Name:</label><br>
+          <label for="name">Name *:</label><br>
           <input type="text" id="name" name="name"><br>
-          <label for="username">Username:</label><br>
+          <label for="username">Username *:</label><br>
           <input type="text" id="username" name="username"><br>
+          <div style="height: 50px;">
           <label for="gender">Gender:</label><br>
           <input type="radio" id="genderMale" name="gender" value="male">Male
           <input type="radio" id="genderFemale" name="gender" value="female">Female<br>
-          <label for="email">Email:</label><br>
+          </div>
+          <label for="email">Email *:</label><br>
           <input type="email" id="email" name="email"><br>
-          <label for="password">Password:</label><br>
+          <label for="password">Password *:</label><br>
           <input type="password" id="password" name="password"><br>
-          <label for="repeat-password">Repeat Password:</label><br>
+          <label for="repeat-password">Repeat Password *:</label><br>
           <input type="password" id="repeat-password" name="repeat-password"><br>
-          <input type="checkbox" id="remember-me" name="remember-me">
-          <label for="remember-me">Remember me</label><br><br>
           <input type="submit" value="Sign Up">
+          <p>Already have an account? <a href="./login.html" id="sign-in-link">Sign In</a></p>
         </form> 
       </body>
+      <script src="signupValidation.js" type="text/JavaScript"></script>
 </html>

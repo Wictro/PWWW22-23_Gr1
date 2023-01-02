@@ -22,9 +22,6 @@ form.addEventListener("submit", (event) => {
   if (isValidUsername && isValidPassword) {
     let username = usernameRegex.exec(usernameInput.value)[0];
     let password = passwordRegex.exec(passwordInput.value)[0];
-    console.log(username)
-    console.log(password)
-    alert("Validation finished successfully!")
   }
 });
 

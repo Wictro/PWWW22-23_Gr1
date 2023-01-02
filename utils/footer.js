@@ -39,10 +39,10 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                     <div id="my-account">
                         <h2>MY ACCOUNT</h2>
                         <ul>
-                            <li><a href="#" id="your-account-link">Your account</a></li>
+                            <li><a href="forms/login.html" id="your-account-link">Your account</a></li>
                             <li><a href="#" id="check-out-link">Check out</a></li>
-                            <li><a href="#" id="login-link">Login</a></li>
-                            <li><a href="#" id="register-link">Register</a></li>
+                            <li><a href="forms/login.html" id="login-link">Login</a></li>
+                            <li><a href="forms/signup.html" id="register-link">Register</a></li>
                         </ul>
                     </div>
                 </div>

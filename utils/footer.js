@@ -29,8 +29,8 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                     <div id="support">
                         <h2>SUPPORT</h2>
                         <ul>
-                            <li><a href="#" id="faq-link">FAQ</a></li>
-                            <li><a href="#" id="delivery-link">Delivery</a></li>
+                            <li><a href="../PWWW22-23_Gr1/recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
+                            <li><a href="../PWWW22-23_Gr1/recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
                             <li><a href="#" id="payment-link">Payment Options</a></li>
                             <li><a href="#" id="payment-link">Returns & Refunds</a></li>
                         </ul>

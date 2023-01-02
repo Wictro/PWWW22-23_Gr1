@@ -4,11 +4,11 @@ function start() {
     const container = document.querySelector('.scroll-container');
     
     btnLeft.addEventListener('click', () => {
-      container.scrollLeft -= 50; 
+      container.scrollLeft -= 330; 
     });
     
     btnRight.addEventListener('click', () => {
-      container.scrollLeft += 50; 
+      container.scrollLeft += 330; 
     });
     
 }

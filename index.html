@@ -8,36 +8,39 @@
     <title>Hunger Hunt</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./utils/featuredDishesScroll.js" type="text/javascript"></script>
 </head>
 
 <body>
     <header>
-    <div class="navbar">
+        <div class="navbar">
             <nav>
-               <script src="utils/navbar.js" type="text/JavaScript"></script>
+                <script src="utils/navbar.js" type="text/JavaScript"></script>
             </nav>
         </div>
-            <div class="splash">
-                <div class="section-title">
-                    <h1 class="golden-title" style="font-size: 70px;">Welcome to</h1>
-                    <h1 style="color: white; text-transform: uppercase;">Hunger Hunt</h1>
-                    <div class="logo" >
-                        <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon"/>
-                    </div>
-                    <p style="color: white; font-size: 24px; margin-bottom: 20px;">Get the freshest ingredients from Hunger Hunt</p>
+        <div class="splash">
+            <div class="section-title">
+                <h1 class="golden-title" style="font-size: 70px;">Welcome to</h1>
+                <h1 style="color: white; text-transform: uppercase;">Hunger Hunt</h1>
+                <div class="logo">
+                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
                 </div>
-                <div class="book">
-                    <div class="book-section-container">
-                        <p>01/15/2023 08:00 pm  People: 4</p>
-                        <input id="booking" type="submit" value="Book Now" style="border: none;">
-                    </div>
+                <p style="color: white; font-size: 24px; margin-bottom: 20px;">Get the freshest ingredients from Hunger
+                    Hunt</p>
+            </div>
+            <div class="book">
+                <div class="book-section-container">
+                    <p>01/15/2023 08:00 pm People: 4</p>
+                    <input id="booking" type="submit" value="Book Now" style="border: none;">
                 </div>
             </div>
-        </header>
+        </div>
+    </header>
 
     <div id="about-us">
         <div class="section-title-about">
-            <img src="assets/images/cake.png" alt="Cake" style="height: 100%; min-width: 50%; width: 100%; padding: 10px;"/>
+            <img src="assets/images/cake.png" alt="Cake"
+                style="height: 100%; min-width: 50%; width: 100%; padding: 10px;" />
         </div>
         <div id="about-us-sider">
             <h1 class="golden-title" style="text-transform: lowercase;">about us</h1>
@@ -51,112 +54,150 @@
             </p>
         </div>
     </div>
-    <div id="featured-dishes"> <!--JS will be used in this section-->
+    <div id="featured-dishes">
+        <!--JS will be used in this section-->
         <div class="section-title-check">
             <h1 class="golden-title">Check</h1>
             <h1 class="bold-title">Featured dishes</h1>
             <div class="logo">
-                <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon"/>
+                <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
             </div>
             <div class="featured-dishes-container">
-                <span class="fa fa-chevron-left left-arrow"></span>
-                <div>
-                    <div class="dish-image-container" style="background-image: url('assets/images/gallery1.png');">
+                <span id="left-button" class="fa fa-chevron-left left-arrow"></span>
+                <div class="scroll-container">
+                    <div class="scroll-item">
+                        <div class="dish-image-container" style="background-image: url('assets/images/gallery1.png');">
+                        </div>
+                        <p>Salad</p>
+                        <h2>ITALIAN FRESH SALAD</h2>
+                        <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
+                        <input id="featured-dishes-price" type="button" value="$12">
                     </div>
-                    <p>Salad</p>
-                    <h2>ITALIAN FRESH SALAD</h2>
-                    <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
-                    <input id="featured-dishes-price" type="button" value="$12">
-                </div>
-                <div>
-                    <div class="dish-image-container" style="background-image: url(assets/images/gallery7.png);">
+                    <div class="scroll-item">
+                        <div class="dish-image-container" style="background-image: url(assets/images/gallery7.png);">
+                        </div>
+                        <p>Desserts</p>
+                        <h2>BLUEBERRY ICE-CHOCO</h2>
+                        <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
+                        <input id="featured-dishes-price" type="button" value="$18">
                     </div>
-                    <p>Desserts</p>
-                    <h2>BLUEBERRY ICE-CHOCO</h2>
-                    <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
-                    <input id="featured-dishes-price" type="button" value="$18">
-                </div>
-                <div>
-                    <div class="dish-image-container" style="background-image: url(assets/images/appetizers.png);">
+                    <div class="scroll-item">
+                        <div class="dish-image-container" style="background-image: url(assets/images/appetizers.png);">
+                        </div>
+                        <p>Appetizers</p>
+                        <h2>FRIED SALMON DISH</h2>
+                        <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
+                        <input id="featured-dishes-price" type="button" value="$20">
                     </div>
-                    <p>Appetizers</p>
-                    <h2>FRIED SALMON DISH</h2>
-                    <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
-                    <input id="featured-dishes-price" type="button" value="$20">
+                    <div class="scroll-item">
+                        <div class="dish-image-container" style="background-image: url('assets/images/gallery1.png');">
+                        </div>
+                        <p>Salad</p>
+                        <h2>ITALIAN FRESH SALAD</h2>
+                        <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
+                        <input id="featured-dishes-price" type="button" value="$12">
+                    </div>
+                    <div class="scroll-item">
+                        <div class="dish-image-container" style="background-image: url('assets/images/gallery1.png');">
+                        </div>
+                        <p>Salad</p>
+                        <h2>ITALIAN FRESH SALAD</h2>
+                        <p>Italian salad consists of tomatoes, onions, feta cheese and olives</p>
+                        <input id="featured-dishes-price" type="button" value="$12">
+                    </div>
                 </div>
-                <span class="fa fa-chevron-right right-arrow"></span>
+                <span id="right-button" class="fa fa-chevron-right right-arrow"></span>
             </div>
         </div>
     </div>
     <div id="schedule">
         <div id="black-outer-background">
-        <div id="black-background">
-            <div class="section-title-schedule">
-                <h1 class="golden-title">Time</h1>
-                <h1 class="bold-title">Open at</h1>
-                <div class="logo">
-                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon"/>
+            <div id="black-background">
+                <div class="section-title-schedule">
+                    <h1 class="golden-title">Time</h1>
+                    <h1 class="bold-title">Open at</h1>
+                    <div class="logo">
+                        <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
+                    </div>
+                    <div class="open-weekdays">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>MONDAY-FRIDAY</th>
+                                    <th>SATURDAY-SUNDAY</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>7am - 11am ( Breakfast )</td>
+                                    <td>8am - 1pm ( Breakfast )</td>
+                                </tr>
+                                <tr>
+                                    <td>11am - 10pm ( Lunch/Dinner )</td>
+                                    <td>1pm - 9pm ( Lunch/Dinner )</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 class="telephone-number">+15 124 567 85 23</h3>
+                    <button class="button" id="book-button">Book your table</button>
                 </div>
-                <div class="open-weekdays">
-                    <table>
-                        <thead>
-                            <tr><th>MONDAY-FRIDAY</th><th>SATURDAY-SUNDAY</th></tr>
-                        </thead>
-                        <tbody>
-                            <tr><td>7am - 11am ( Breakfast )</td><td>8am - 1pm ( Breakfast )</td></tr>
-                            <tr><td>11am - 10pm ( Lunch/Dinner )</td><td>1pm - 9pm ( Lunch/Dinner )</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3 class="telephone-number">+15 124 567 85 23</h3>
-                <button class="button" id="book-button">Book your table</button>
             </div>
-        </div>
         </div>
     </div>
     <div id="menu">
-            <div class="section-title-menu">
-                <h1 class="golden-title">Discover</h1>
-                <h1 class="bold-title">Our starters</h1>
-                <div class="logo">
-                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
-                </div>
-                <div id="menu-container">
-                    <div class="starters-menu">
-                        <ul class="starters">
-                            <li><strong>Soft-Boiled Organic Egg</strong><span> with "soldiers"</span><span id="price">5.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Egg in Puff Pastry</strong><span> with wild mushrooms</span><span id="price">9.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Eggs Any Style </strong><span> with homefries & toast</span><span id="price">6.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Eggs Norwegian </strong><span> with homefries</span><span id="price">5.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Egss Benedict </strong><span> with homefries</span><span id="price">2.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Soft Organic Egg </strong><span> with "soldiers"</span><span id="price">6.00</span></li>
-                            <div class="price-separator"></div>
-                        </ul>
-                    </div>
-                    <div class="starters-menu">
-                        <ul class="starters">
-                            <li><strong>Soft-Boiled Organic Egg</strong><span> with "soldiers"</span><span id="price">5.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Egg in Puff Pastry</strong><span> with wild mushrooms</span><span id="price">9.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Eggs Any Style </strong><span> with homefries & toast</span><span id="price">6.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Eggs Norwegian </strong><span> with homefries</span><span id="price">5.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Egss Benedict </strong><span> with homefries</span><span id="price">2.00</span></li>
-                            <div class="price-separator"></div>
-                            <li><strong>Soft Organic Egg </strong><span> with "soldiers"</span><span id="price">6.00</span></li>
-                            <div class="price-separator"></div>
-                        </ul>
-                    </div>
-                </div>
-                <button class="button" id="view-button">View full menu</button>
+        <div class="section-title-menu">
+            <h1 class="golden-title">Discover</h1>
+            <h1 class="bold-title">Our starters</h1>
+            <div class="logo">
+                <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
             </div>
+            <div id="menu-container">
+                <div class="starters-menu">
+                    <ul class="starters">
+                        <li><strong>Soft-Boiled Organic Egg</strong><span> with "soldiers"</span><span
+                                id="price">5.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Egg in Puff Pastry</strong><span> with wild mushrooms</span><span
+                                id="price">9.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Eggs Any Style </strong><span> with homefries & toast</span><span
+                                id="price">6.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Eggs Norwegian </strong><span> with homefries</span><span id="price">5.00</span>
+                        </li>
+                        <div class="price-separator"></div>
+                        <li><strong>Egss Benedict </strong><span> with homefries</span><span id="price">2.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Soft Organic Egg </strong><span> with "soldiers"</span><span id="price">6.00</span>
+                        </li>
+                        <div class="price-separator"></div>
+                    </ul>
+                </div>
+                <div class="starters-menu">
+                    <ul class="starters">
+                        <li><strong>Soft-Boiled Organic Egg</strong><span> with "soldiers"</span><span
+                                id="price">5.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Egg in Puff Pastry</strong><span> with wild mushrooms</span><span
+                                id="price">9.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Eggs Any Style </strong><span> with homefries & toast</span><span
+                                id="price">6.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Eggs Norwegian </strong><span> with homefries</span><span id="price">5.00</span>
+                        </li>
+                        <div class="price-separator"></div>
+                        <li><strong>Egss Benedict </strong><span> with homefries</span><span id="price">2.00</span></li>
+                        <div class="price-separator"></div>
+                        <li><strong>Soft Organic Egg </strong><span> with "soldiers"</span><span id="price">6.00</span>
+                        </li>
+                        <div class="price-separator"></div>
+                    </ul>
+                </div>
+            </div>
+            <button class="button" id="view-button">View full menu</button>
+        </div>
     </div>
     <div id="blogs">
         <div id="featured-dishes" style="width: 100%; height: 100%">
@@ -164,73 +205,79 @@
                 <h1 class="golden-title">Check</h1>
                 <h1 class="bold-title">Our blogs</h1>
                 <div class="logo">
-                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon"/>
+                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
                 </div>
                 <div class="blogs">
-                <div class="blog">
-                    <img src="assets/images/meat.png" alt="Meat" />
-                    <h2>WE LOVE IT WHEN YOU LOVE IT</h2>
-                    <p style="font-size: 14px;">March 30, 2018, by <span style="font-weight:bold;">Gustave Bernier</span>, 2 Comments</p>
-                    <p>How did the hand pies look? Did you love the brownies? How many choux did you eat in one sitting? After a gorgeos selection of our favorites for a client to send as a new year's gift.
-                    </p>
-            </div>
-            <div class="blog">
-                <img src="assets/images/pancake.png" alt="Pancake" />
-                <h2>HOW MY LOVE OF SWEET TURNED</h2>
-                <p style="font-size: 14px;">March 30, 2018, by <span style="font-weight:bold;">Gustave Bernier</span>, 2 Comments</p>
-                <p>How did the hand pies look? Yes, there are the things I think about. So today, after creating a gorgeous selection ofour favorites for a client to send as a new year's gift.
-                </p>
-            </div>
-        </div>
-        <button class="button" id="blogs-button">View blogs</button>
+                    <div class="blog">
+                        <img src="assets/images/meat.png" alt="Meat" />
+                        <h2>WE LOVE IT WHEN YOU LOVE IT</h2>
+                        <p style="font-size: 14px;">March 30, 2018, by <span style="font-weight:bold;">Gustave
+                                Bernier</span>, 2 Comments</p>
+                        <p>How did the hand pies look? Did you love the brownies? How many choux did you eat in one
+                            sitting? After a gorgeos selection of our favorites for a client to send as a new year's
+                            gift.
+                        </p>
+                    </div>
+                    <div class="blog">
+                        <img src="assets/images/pancake.png" alt="Pancake" />
+                        <h2>HOW MY LOVE OF SWEET TURNED</h2>
+                        <p style="font-size: 14px;">March 30, 2018, by <span style="font-weight:bold;">Gustave
+                                Bernier</span>, 2 Comments</p>
+                        <p>How did the hand pies look? Yes, there are the things I think about. So today, after creating
+                            a gorgeous selection ofour favorites for a client to send as a new year's gift.
+                        </p>
+                    </div>
+                </div>
+                <button class="button" id="blogs-button">View blogs</button>
             </div>
         </div>
     </div>
     <section id="gallery">
-            <div class="section-title-gallery">
-                <h1 class="golden-title">Discover</h1>
-                <h1 class="bold-title">Our gallery</h1>
-                <div class="logo">
-                    <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
-                </div>
+        <div class="section-title-gallery">
+            <h1 class="golden-title">Discover</h1>
+            <h1 class="bold-title">Our gallery</h1>
+            <div class="logo">
+                <img src="assets/images/icons8-cutlery-99.png" alt="forkandspoon" />
             </div>
-            <div class="gallery-photos">
-                <table>
-                    <body>
-                        <tr>
-                            <td>
-                                <img src="assets/images/gallery1.png" alt="gallery1"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery3.png" alt="gallery2"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery3.png" alt="gallery3"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery4.png" alt="gallery4"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <img src="assets/images/gallery5.png" alt="gallery5"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery6.png" alt="gallery6"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery7.png" alt="gallery7"/>
-                            </td>
-                            <td>
-                                <img src="assets/images/gallery8.png" alt="gallery9"/>
-                            </td>
-                        </tr>
-                    </body>
-                </table>
-            </div>
-            <div class="gallery-button">
-                <button class="button" id="view-button">View gallery</button>
-            </div>
+        </div>
+        <div class="gallery-photos">
+            <table>
+
+                <body>
+                    <tr>
+                        <td>
+                            <img src="assets/images/gallery1.png" alt="gallery1" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery3.png" alt="gallery2" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery3.png" alt="gallery3" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery4.png" alt="gallery4" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="assets/images/gallery5.png" alt="gallery5" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery6.png" alt="gallery6" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery7.png" alt="gallery7" />
+                        </td>
+                        <td>
+                            <img src="assets/images/gallery8.png" alt="gallery9" />
+                        </td>
+                    </tr>
+                </body>
+            </table>
+        </div>
+        <div class="gallery-button">
+            <button class="button" id="view-button">View gallery</button>
+        </div>
     </section>
     <footer>
         <script src="utils/footer.js" type="text/JavaScript"></script>

@@ -298,6 +298,8 @@ ul li a {
     font-family: italic;
     resize: both;
     overflow: auto;
+    outline-offset: 12px;
+    outline: 5px dashed white;
 }
 
 .form-submenu {

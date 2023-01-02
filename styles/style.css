@@ -850,6 +850,11 @@ footer {
     padding-right: 3px;
 }
 
+#left-button:hover, #right-button:hover {
+    color: #7b7b93;
+    cursor: pointer;
+}
+
 
 /* Some queries for different types of window resolution */
 

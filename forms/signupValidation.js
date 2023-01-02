@@ -17,6 +17,7 @@ form.addEventListener("submit", (event) => {
   let isValidEmail = emailInput.value.includes(".com") || emailInput.value.includes(".edu");
   let isValidPassword = passwordRegex.test(passwordInput.value) && passwordRegex.test(repeatPasswordInput.value);
   let isValidRepeatPassword = passwordInput.value === repeatPasswordInput.value;
+  console.log(localStorage)
 
   if (!isValidName || !isValidUsername || !isValidPassword || !isValidRepeatPassword || !isValidEmail) {
     alert("Please fill in all necessary fields with appropriate standard");

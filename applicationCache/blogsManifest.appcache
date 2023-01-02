@@ -1,8 +1,10 @@
 CACHE MANIFEST
 # 2023-01-01 v1.0.0
-/blog-style.css
-/navbar.js
-/footer.js
+/styles/blog-style.css
+/utils/navbar.js
+/utils/footer.js
+/assets/fonts/*
+/assets/images/*
 
 NETWORK:
 *

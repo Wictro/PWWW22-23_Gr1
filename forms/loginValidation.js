@@ -5,28 +5,30 @@ let form = document.getElementById("login-form");
 let usernameInput = document.getElementById("username-input");
 let passwordInput = document.getElementById("password-input");
 
-const someTestingData = [
-  {
-    email: 'lorikramosaj@gmail.com',
-    password: 'notsocool'
-  },
-  {
-    email: 'auritebytyci1@gmail.com',
-    password: 'verycool'
-  },
-  {
-    email: 'glenn.recker@gmail.com',
-    password: 'watchlover12'
-  },
-  {
-    email: 'bryanmattesonUSA@gmail.com',
-    password: 'america&italy'
-  },
-  {
-    email: 'evanmeyerAufDeutsch@uni-pr.edu',
-    password: 'tenessianGuy'
-  }
-]
+// const someTestingData = [
+//   {
+//     email: 'lorikramosaj@gmail.com',
+//     password: 'notsocool'
+//   },
+//   {
+//     email: 'auritebytyci1@gmail.com',
+//     password: 'verycool'
+//   },
+//   {
+//     email: 'glenn.recker@gmail.com',
+//     password: 'watchlover12'
+//   },
+//   {
+//     email: 'bryanmattesonUSA@gmail.com',
+//     password: 'america&italy'
+//   },
+//   {
+//     email: 'evanmeyerAufDeutsch@uni-pr.edu',
+//     password: 'tenessianGuy'
+//   }
+// ]
+
+let dataset = Object.values(window.localStorage).map(item => JSON.parse(item))
 
 form.addEventListener("submit", (event) => {
   let isValidUser = usernameRegex.test(usernameInput.value);
@@ -44,7 +46,7 @@ form.addEventListener("submit", (event) => {
     // event.preventDefault();
     let username = usernameRegex.exec(usernameInput.value)[0];
     let password = passwordRegex.exec(passwordInput.value)[0];
-    const isValidLogin = someTestingData?.map((item, index) => {
+    const isValidLogin = dataset?.map((item, index) => {
       if (username !== item.email) {
         messageError = "An account with the given email address doesn't exist. Please create one!"
         return false

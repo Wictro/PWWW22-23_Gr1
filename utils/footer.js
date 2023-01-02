@@ -23,7 +23,7 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                         <ul>
                             <li><address><a href="./contact.html#mapouter" id="map-link"><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> PO Box 1612 Collin Street, <abbr>NYC</abbr></a></address></li>
                             <li><i class="fa fa-phone"></i> (+801)-2345-6789</li>
-                            <li><i class="fa fa-envelope"></i> support@hungerhunt.com</li>
+                            <li><a href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSKjDVtDnFWFKHmSRrhPBWPNpDctldvwvNxvRhRMVnVlZHfTmjfdXWzCwmGWbXDkFLhNZcJL" target="_blank"><i class="fa fa-envelope"></i> support@hungerhunt.com<a/></li>
                         </ul>
                     </div>
                     <div id="support">
@@ -32,7 +32,7 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                             <li><a href="../PWWW22-23_Gr1/recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
                             <li><a href="../PWWW22-23_Gr1/recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
                             <li><a href="#" id="payment-link">Payment Options</a></li>
-                            <li><a href="#" id="payment-link">Returns & Refunds</a></li>
+                            <li><a href="#" id="payment-link">Returns &amp; Refunds</a></li>
                         </ul>
                     </div>
                     <div id="shop">
@@ -84,7 +84,7 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                 </div>
                 </div>
                 <div class="footer-credentials" style="background-color: black;">
-                    <p style="color: gray; font-size: 20px;">@2019 Templates Jungle. All Rights Reserved</p>
+                    <p style="color: gray; font-size: 20px;">@2019 Templates Jungle. &copy; All Rights Reserved</p>
                     <div class="card-class" style="font-size: 20px;">
                         <i class="fa fa-cc-visa" style="color: red;"></i>
                         <i class="fa fa-cc-mastercard" style="color: orange; background-size: 100%  ;"></i>

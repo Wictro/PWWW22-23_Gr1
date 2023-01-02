@@ -433,3 +433,29 @@ li {
     color: #835f21;
 
 }
+
+.image-art {
+    border: 8px solid ;
+    border-image: linear-gradient(#835f21, #cfaf77) 30;
+    margin: 0 22.5%;
+}
+
+
+.view-text {
+    margin: 10% 5% 4% 25%;
+    width: 45%;
+    border-style: solid;
+    border-image-source: url('./../assets/images/border-image.png');
+    border-image-slice: 30;
+    border-image-width: 35px;
+}
+
+.view-text div {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.view-text div h4 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: 45px;
+}

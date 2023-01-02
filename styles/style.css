@@ -784,6 +784,11 @@ footer {
     margin-top: -3px;
 }
 
+#email-submit:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .footer-links h2 {
     margin-bottom: 20px;
     font-size: 26px;

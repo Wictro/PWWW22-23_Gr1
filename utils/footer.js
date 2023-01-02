@@ -1,3 +1,21 @@
+function validateEmail() {
+    let emailValue = document.getElementById('newsletter-email').value
+    if (!emailValue.includes('@') || !emailValue.includes('.com')) {
+        alert('Please write a valid email!')
+        throw new Error('Please write a valid email')
+    }
+    const emailAlreadyExists = Object.keys(localStorage).includes(`email${emailValue}`)
+    if (emailAlreadyExists) {
+        alert("A user with that email address is already registered! Please change email address!");
+        throw new Error('A user with that email address is already registered! Please change email address!')
+    }
+    else {
+        alert('Email successfully registered!')
+        localStorage.setItem(`email${emailValue}`, emailValue);
+    }
+    document.getElementById('newsletter-email').value = ""
+}
+
 var html = `<div class="footer-background-content" style="height: 620px; padding-left: 20px;">
                 <div class="footer-links">
                     <div id="contact-info">
@@ -60,8 +78,8 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                     </div>
                     <div id="newsletter-and-email">
                         <h3 style="text-transform: uppercase; font-family: sans-serif; font-size: 26px;">NEWSLETTER</h3>
-                        <input type="email" placeholder="Your email address" />
-                        <button id="email-submit"></button>
+                        <input type="email" placeholder="Your email address" id="newsletter-email"/>
+                        <button id="email-submit" onclick="validateEmail()"></button>
                     </div>
                 </div>
                 </div>

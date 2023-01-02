@@ -217,6 +217,11 @@
     margin-left: -40px;
     margin-top: -3px;
    }
+
+   #email-submit:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    }
    
    .footer-credentials {
     height: 80px;

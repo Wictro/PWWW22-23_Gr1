@@ -8,30 +8,6 @@
     <link rel="stylesheet" href="styles/reservations-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="utils/backgroundTiming.js" type="text/JavaScript"></script>
-    <script>
-        var today = new Date().toISOString().split('T')[0];
-        document.getElementsByName("date")[0].setAttribute('min', today);
-        function handleSave() {
-            var date = document.querySelector(`input[name="date"]`).value
-            var time = document.querySelector(`input[name="time"]`).value
-            var people = document.querySelector(`input[name="peopleNumber"]`).value
-
-            if (date === "" || time === "" || people === "" || people < 1 || people > 99) {
-                alert("Something went wrong! Please check the data inputs")
-                throw new Error("Something went wrong! Please check the data inputs")
-            }
-            else {
-                alert("Reservation was successful!")
-                localStorage.setItem('date', date.toString())
-                localStorage.setItem('time', time.toString())
-                localStorage.setItem('people', people.toString())
-            }
-
-            console.log(date)
-            console.log(time)
-            console.log(people)
-        }
-    </script>
     <title>Reservations</title>
 </head>
 
@@ -117,5 +93,52 @@
         <script src="utils/footer.js" type="text/JavaScript"></script>
     </footer>
 </body>
+<script>
+    function isValidJSON(text) {
+        try {
+            JSON.parse(text);
+            return true;
+        } catch {
+            return false;
+        }
+    }
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("date")[0].setAttribute('min', today);
+    function handleSave() {
+        var date = document.querySelector(`input[name="date"]`).value
+        var time = document.querySelector(`input[name="time"]`).value
+        var people = document.querySelector(`input[name="people"]`).value
+        let lastReservation = localStorage.getItem('reservation');
+
+        if (date === "" || time === "" || people === "" || people < 1 || people > 99) {
+            alert("Something went wrong! Please check the data inputs")
+            throw new Error("Something went wrong! Please check the data inputs")
+        }
+        else {
+            let isJSONFormat = isValidJSON(sessionStorage.getItem('reservation'))
+            if (isJSONFormat) {
+                let lastReservation = JSON.parse(sessionStorage.getItem('reservation'))
+                console.log(lastReservation)
+                let reservation = {
+                    date: date,
+                    time: time,
+                    people: people
+                };
+                if (lastReservation.date === reservation.date && lastReservation.time === reservation.time && lastReservation.people === reservation.people) {
+                    alert('The reservation with the same exact data was made from this accout!')
+                    throw new Error('The reservation with the same exact data was made from this accout!')
+                }
+                else {
+                    alert("Reservation was successful!");
+                    sessionStorage.setItem('reservation', JSON.stringify(reservation))
+                }
+            }
+            else {
+                alert("A mistake has happened; data is not in json format!")
+                throw new Error("A mistake has happened; data is not in json format!")
+            }
+        }
+    }
+</script>
 
 </html>

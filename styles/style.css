@@ -648,11 +648,6 @@ nav {
     opacity: 0.5;
 }
 
-.gallery-button {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .blogs {
     height: 70%;
     display: flex;

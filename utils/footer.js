@@ -29,8 +29,8 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                     <div id="support">
                         <h2>SUPPORT</h2>
                         <ul>
-                            <li><a href="../PWWW22-23_Gr1/recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
-                            <li><a href="../PWWW22-23_Gr1/recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
+                            <li><a href="./recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
+                            <li><a href="./recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
                             <li><a href="#" id="payment-link">Payment Options</a></li>
                             <li><a href="#" id="payment-link">Returns &amp; Refunds</a></li>
                         </ul>
@@ -38,27 +38,25 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                     <div id="shop">
                         <h2>SHOP</h2>
                         <ul>
-                            <li><a href="#" id="non-veg-link">Non-Veg</a></li>
-                            <li><a href="#" id="veg-link">Veg</a></li>
-                            <li><a href="#" id="salads-link">Salads</a></li>
-                            <li><a href="#" id="desserts-link">Desserts</a></li>
-                            <li><a href="#" id="appertizers-link">Appetizers</a></li>
+                            <li><a href="./shop.html" id="non-veg-link">Non-Veg</a></li>
+                            <li><a href="./shop.html" id="veg-link">Veg</a></li>
+                            <li><a href="./shop.html" id="salads-link">Salads</a></li>
+                            <li><a href="./shop.html" id="appertizers-link">Appetizers</a></li>
                         </ul>
                     </div>
                     <div id="information">
                         <h2>INFORMATION</h2>
                         <ul>
-                            <li><a href="#" id="home-link">Home</a></li>
-                            <li><a href="#" id="about-us-link">About Us</a></li>
-                            <li><a href="#" id="blogs-link">Blogs</a></li>
-                            <li><a href="#" id="contact-us-link">Contact Us</a></li>
+                            <li><a href="index.html" id="home-link">Home</a></li>
+                            <li><a href="visitUs.html" id="about-us-link">About Us</a></li>
+                            <li><a href="blog.html" id="blogs-link">Blogs</a></li>
+                            <li><a href="contact.html" id="contact-us-link">Contact Us</a></li>
                         </ul>
                     </div>
                     <div id="my-account">
                         <h2>MY ACCOUNT</h2>
                         <ul>
                             <li><a href="forms/login.html" id="your-account-link">Your account</a></li>
-                            <li><a href="#" id="check-out-link">Check out</a></li>
                             <li><a href="forms/login.html" id="login-link">Login</a></li>
                             <li><a href="forms/signup.html" id="register-link">Register</a></li>
                         </ul>

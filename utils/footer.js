@@ -34,8 +34,6 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                         <ul>
                             <li><a href="./recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
                             <li><a href="./recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
-                            <li><a href="#" id="payment-link">Payment Options</a></li>
-                            <li><a href="#" id="payment-link">Returns &amp; Refunds</a></li>
                         </ul>
                     </div>
                     <div id="shop">

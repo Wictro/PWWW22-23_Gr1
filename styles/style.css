@@ -39,10 +39,6 @@ header {
     width: 100%;
 }
 
-.navbar-logo {
-
-}
-
 .navbar-logo img {
     width: 50px;
     height: 50px;
@@ -56,7 +52,6 @@ header {
 .golden-title {
     color: rgb(197, 138, 27);
     font-family: "Great Vibes", "cursive", sans-serif;
-    /* text-shadow: rgb(0, 0, 0) -2.36667px 1.13333px 1.96803px; */
     font-size: 40px;
     padding: 10px;
     font-weight: 300;
@@ -319,27 +314,6 @@ img:hover {
     column-rule: 1px solid lightgrey;
 }
 
-/* input[type="date"]{
-    background-color: #d7e3f0;
-    padding: 15px;
-    font-family: "Roboto Mono",monospace;
-    color: #796c6c;
-    font-size: 18px;
-    border: none;
-    outline: none;
-}
-::-webkit-calendar-picker-indicator{
-    font-size: 18px;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-input[type="time"] {
-    font-size: 18px;
-    background-color: #dbd3d3;
-} */
-
 nav {
     width: 100%;
     top: 0;
@@ -392,10 +366,6 @@ nav {
     margin-right: auto;
 }
 
-/* #newsletter-and-email {
-    background-color: var(--transparent-black);
-} */
-
 .featured-dishes-container {
     margin: 30px auto;
     display: flex;
@@ -438,7 +408,7 @@ nav {
 }
 
 #menu {
-    width: 60%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 150px;
@@ -457,15 +427,6 @@ nav {
     border-style: none;
     width: 70px;
 }
-
-
-/* .featured-dishes-container p:first-child {
-    margin-bottom: 15px;
-}
-
-.featured-dishes-container p:last-child {
-    margin-top: 15px;
-} */
 
 .scroll-container {
     width: 100%;
@@ -614,7 +575,7 @@ nav {
 }
 
 .starters li {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     height: 22px;
     margin-top: 20px;
@@ -671,10 +632,6 @@ nav {
 
 .blogs div:last-child {
     padding-left: 15px;
-}
-
-.blog p, .blog pre, .blog h2 {
-    
 }
 
 .section-title-blogs {
@@ -854,8 +811,11 @@ footer {
 /* Some queries for different types of window resolution */
 
 @media screen and (max-width: 1515px) {
-    #blogs, #menu, #featured-dishes, #about-us {
+    #blogs, #featured-dishes, #about-us {
         width: 900px;
+    }
+    #menu {
+        width: 100%;
     }
 }
 
@@ -877,7 +837,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 915px) {
+@media screen and (max-width: 925px) {
     #blogs, #menu, #featured-dishes, #about-us {
         width: 100%;
     }
@@ -889,10 +849,8 @@ footer {
 
     #blog-link, #shop-link, #contact-link, header .social-links {
         display: none;
-    } 
-}
+    }
 
-@media screen and (max-width: 850px) {
     #menu {
         height: 930px;
     }
@@ -917,7 +875,9 @@ footer {
         margin-left: 0;
         padding-top: 0;
     }
+}
 
+@media screen and (max-width: 850px) {
     #about-us {
         display: block;
         margin-top: 150px;

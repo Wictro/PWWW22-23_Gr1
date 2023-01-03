@@ -3,7 +3,7 @@ function Record(img) {
 }
 
 const img1 = new Record('assets/images/gallery1.png')
-const img2 = new Record('assets/images/gallery3.png')
+const img2 = new Record('assets/images/gallery8.png')
 const img3 = new Record('assets/images/gallery3.png')
 const img4 = new Record('assets/images/gallery4.png')
 const img5 = new Record('assets/images/gallery5.png')

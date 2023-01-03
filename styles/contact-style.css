@@ -412,15 +412,29 @@ ul li a {
 .contact-form{
     padding: 1em;
     display: flex;
-    gap: 1em;
     flex-direction: column;
-    width: min-content;
+    gap: 1em;
     border: 1px solid #752f2f;
-    margin: 1em;
+    margin: 3em;
+    width: 70em;
+}
+
+#name {
+    width: 30%;
+}
+
+textarea {
+    width: 100%;
+    height: 8em;
+    margin-top: 3em;
 }
 
 .contact-form input, .contact-form textarea{
     padding: 1em;
+}
+
+.contact-form input {
+    width: 30%;
 }
 
 .contact-form input[type="submit"]{
@@ -430,6 +444,7 @@ ul li a {
     color: white;
     padding: 1em;
     border-radius: 10px;
+    margin-left: 29em;
 }
 
 .star-rate{

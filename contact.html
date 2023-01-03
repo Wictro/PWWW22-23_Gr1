@@ -112,15 +112,30 @@
             <h4>CONTACT FORM</h4>
             <hr>
         </div>
-        <div style="display: flex; align-items: center; justify-content: center;"><form action="" class="contact-form" id="contact-form">
-            <input type="email" name="email" placeholder="Email" id="email" required>
-            <input type="text" name="phone" placeholder="Phone Number" id="phone" required>
-            <textarea name="message" placeholder="What do you want to say?" id="message" required></textarea>
-            <div>
-                <label for="visited" style="margin-right: 0.5em;">I've visited HungerHunt before</label><input type="checkbox" name="visited" id="visited">    
-            </div>
-            <input type="submit" value="Send!">
-        </form></div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <form action="" class="contact-form" id="contact-form">
+                <div class="form-items">
+                    <input type="text" name="name" placeholder="Name (Replace &Euml;, &euml;, &Ccedil;, &ccedil; with E, e, C, c)" id="name" required>
+                    <input type="text" name="lastname" placeholder="LastName" id="lastname" required>
+                    <input type="email" name="email" placeholder="Email" id="email" required>
+                </div>
+                <div class="form-items">
+                    <input type="text" name="phone" placeholder="Phone Number" id="phone" required>
+                    <div>
+                        <legend>Have you ever visited our restaurant?</legend>
+                        <input type="radio" name="action" id="visited-yes" value="visited-yes" /><label
+                            for="visited-yes">YES</label>
+                        <input type="radio" name="action" id="visited-no" value="visited-no" /><label
+                            for="visited-no">NO</label>
+                    </div>
+                    <div>
+                     <input type="checkbox" name="visited" id="visited"><label for="visited" style="margin-right: 0.5em; margin-left: -2em;">I find this page very useful!</label>
+                    </div>
+                    <textarea name="message" placeholder="What do you want to say?" id="message" required></textarea>
+                </div>
+                <input type="submit" value="Send!">
+            </form>
+        </div>
         <script src="utils/contactFormValidation.js"></script>
     </section>
     <div class="map-section">

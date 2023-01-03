@@ -929,10 +929,6 @@ footer {
         margin-top: 10px;
     }
 
-    .featured-dishes-container > div:nth-child(2) {
-        display: none;
-    }
-
     .blogs {
         display: block;
         height: 85%;

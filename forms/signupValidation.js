@@ -1,6 +1,6 @@
 let nameRegex = /^.{2,}$/;
 let usernameRegex = /^[a-zA-Z0-9@.]{3,15}$/ig;
-let passwordRegex = /^[a-zA-Z0-9.,@!&$]{8,}$/;
+let passwordRegex = /^[a-zA-Z0-9@.,!&$]{8,}$/;
 
 let form = document.getElementById("signup-form");
 let nameInput = document.getElementById("name");
@@ -14,10 +14,9 @@ let repeatPasswordInput = document.getElementById("repeat-password");
 form.addEventListener("submit", (event) => {
   let isValidName = nameRegex.test(nameInput.value);
   let isValidUsername = usernameRegex.test(usernameInput.value);
-  let isValidEmail = emailInput.value.includes(".com") || emailInput.value.includes(".edu");
+  let isValidEmail = !!emailInput.value.match(".com") || !!emailInput.value.match(".edu");
   let isValidPassword = passwordRegex.test(passwordInput.value) && passwordRegex.test(repeatPasswordInput.value);
   let isValidRepeatPassword = passwordInput.value === repeatPasswordInput.value;
-  console.log(localStorage)
 
   if (!isValidName || !isValidUsername || !isValidPassword || !isValidRepeatPassword || !isValidEmail) {
     alert("Please fill in all necessary fields with appropriate standard");

@@ -388,3 +388,23 @@ ul li a {
     text-decoration: none;
     color: var(--transparent-black);
 }
+
+#distance-calculator{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #009700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#find-distance{
+    border: none;
+    padding: 0.5em;
+    border-radius: 10px;
+    cursor: pointer;
+}

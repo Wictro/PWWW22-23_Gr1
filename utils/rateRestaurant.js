@@ -72,4 +72,8 @@ function changeColor() {
             break;
 
     }
+
+    document.getElementsByClassName("star-rate")[0].style.animationName = "star-rate-remove";
 }
+
+

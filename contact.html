@@ -112,60 +112,15 @@
             <h4>CONTACT FORM</h4>
             <hr>
         </div>
-        <form>
-            <div class="form-items">
-                <div class="form-item-text">
-                    <div>
-                        <label for="input-name">Your Name (Replace &Euml;, &euml;, &Ccedil;, &ccedil; with E, e, C,
-                            c)</label>
-                    </div>
-                    <br>
-                    <input type="text" />
-                </div>
-                <div class="form-item-text">
-                    <div>
-                        <label for="input-email">Your Email</label>
-                    </div>
-                    <br>
-                    <input type="email" />
-                </div>
-                <div class="form-item-text">
-                    <div>
-                        <label for="input-pone">Your Phone</label>
-                    </div>
-                    <br>
-                    <input type="tel" />
-                </div>
-                <div class="form-item-message">
-                    <label for="input-message">Your Message</label>
-                    <br>
-                    <input type="text" />
-                </div>
-                <div class="form-item">
-                    <legend>Have you ever visited our restaurant?</legend>
-                    <input type="radio" name="action" id="visited-yes" value="visited-yes" /><label
-                        for="visited-yes">YES</label>
-                    <input type="radio" name="action" id="visited-no" value="visited-no" /><label
-                        for="visited-no">NO</label>
-                </div>
-                <div>
-                    <input type="checkbox" /> I find this page very useful!
-                </div>
-                <div class="star-rate">
-                    <label>Rate our restaurant:</label>
-                    <span id="star-1" class="fa fa-star" onclick="oneStar()"></span>
-                    <span id="star-2" class="fa fa-star" onclick="twoStars()"></span>
-                    <span id="star-3" class="fa fa-star" onclick="threeStars()"></span>
-                    <span id="star-4" class="fa fa-star" onclick="fourStars()"></span>
-                    <span id="star-5" class="fa fa-star" onclick="fiveStars()"></span>
-                </div>
-                <script src="./utils/rateRestaurant.js" type="text/javascript"></script>
+        <div style="display: flex; align-items: center; justify-content: center;"><form action="" class="contact-form">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <textarea name="message" placeholder="What do you want to say?" required></textarea>
+            <div>
+                <label for="visited" style="margin-right: 0.5em;">I've visited HungerHunt before</label><input type="checkbox" name="visited" id="visited">    
             </div>
-        </form>
-
-        <form action="">
-
-        </form>
+            <input type="submit" value="Send!">
+        </form></div>
     </section>
     <div class="map-section">
         <iframe id="mapouter"
@@ -188,6 +143,15 @@
     <footer>
         <script src="utils/footer.js" type="text/JavaScript"></script>
     </footer>
+    <div class="star-rate">
+        <label>Rate our restaurant:</label>
+        <span id="star-1" class="fa fa-star" onclick="oneStar()"></span>
+        <span id="star-2" class="fa fa-star" onclick="twoStars()"></span>
+        <span id="star-3" class="fa fa-star" onclick="threeStars()"></span>
+        <span id="star-4" class="fa fa-star" onclick="fourStars()"></span>
+        <span id="star-5" class="fa fa-star" onclick="fiveStars()"></span>
+    </div>
+    <script src="./utils/rateRestaurant.js" type="text/javascript"></script>
 </body>
 
 </html>

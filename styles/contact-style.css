@@ -408,3 +408,61 @@ ul li a {
     border-radius: 10px;
     cursor: pointer;
 }
+
+.contact-form{
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    width: min-content;
+    border: 1px solid #752f2f;
+    margin: 1em;
+}
+
+.contact-form input, .contact-form textarea{
+    padding: 1em;
+}
+
+.contact-form input[type="submit"]{
+    padding: unset;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.star-rate{
+    position: fixed;
+    top: 5em;
+    right: 0;
+    background-color: white;
+    padding: 2em;
+    font-size: 1.1em;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: both;
+    transform: translateX(100%);
+    animation-name: star-rate-show;
+}
+
+@keyframes star-rate-show {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes star-rate-remove {
+    0%{
+        transform: translateX(0%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}

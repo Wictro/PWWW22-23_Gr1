@@ -10,7 +10,6 @@ const img5 = new Record('assets/images/gallery5.png')
 const img6 = new Record('assets/images/gallery6.png')
 const img7 = new Record('assets/images/gallery7.png')
 const img8 = new Record('assets/images/gallery8.png')
-console.log(img1)
 
 let tableGallery = `
     <table>

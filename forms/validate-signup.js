@@ -18,21 +18,25 @@ form.onsubmit = (event) => {
     if(!isValidName){
         alert("Please enter a valid name!");
         event.preventDefault();
+        return ;
     }
 
     if(!isValidEmail){
         alert("Please enter a valid email!");
         event.preventDefault();
+        return;
     }
 
     if(!isValidPassword){
         alert("Please enter a valid password!");
         event.preventDefault();
+        return;
     }
 
     if(!isValidRepeatPassword){
         alert("Password fields must match!");
         event.preventDefault();
+        return;
     }
 
     const user = {

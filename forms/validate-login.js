@@ -18,7 +18,7 @@ form.onsubmit = (event) => {
   }
   else{
         let email = emailInput.value;
-        let password = passwordInput.value;
+        let password = PASSWORD_REGEXP.exec(passwordInput.value)[0];
 
         const user = dataset.find(item => item.email === email);
 

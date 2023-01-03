@@ -33,7 +33,7 @@ var html = `<div class="footer-background-content" style="height: 620px; padding
                         <h2>SUPPORT</h2>
                         <ul>
                             <li><a href="./recreation/faq.html" target="_blank" id="faq-link">FAQ</a></li>
-                            <li><a href="./recreation/games/game.html" target="_blank" id="delivery-link">Game</a></li>
+                            <li><a href="./recreation/games/index.html" target="_blank" id="delivery-link">Game</a></li>
                         </ul>
                     </div>
                     <div id="shop">

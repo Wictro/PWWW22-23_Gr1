@@ -116,7 +116,6 @@
         var people = document.querySelector(`input[name="people"]`).value
 
         let isValidPeopleInput = peopleInputRegEx.test(people)
-        console.log(isValidPeopleInput)
 
         if (date === "" || time === "" || people === "" || people < 1 || people > 99 || !isValidPeopleInput) {
             alert("Something went wrong! Please check the data inputs")
@@ -126,7 +125,6 @@
             let isJSONFormat = isValidJSON(sessionStorage.getItem('reservation'))
             if (isJSONFormat) {
                 let lastReservation = JSON.parse(sessionStorage.getItem('reservation'))
-                // console.log(lastReservation)
                 let reservation = {
                     date: date,
                     time: time,
@@ -138,7 +136,6 @@
                         throw new Error('The reservation with the same exact data was made from this accout!')
                     }
                     else {
-                        console.log(time)
                         alert("Reservation was successful!");
                         sessionStorage.setItem('reservation', JSON.stringify(reservation));
                         document.querySelector(`input[name="date"]`).value = "";

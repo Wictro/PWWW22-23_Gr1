@@ -299,7 +299,7 @@ ul li a {
     resize: both;
     overflow: auto;
     outline-offset: 12px;
-    outline: 5px dashed white;
+    outline: 3px dashed black;
 }
 
 .form-submenu {

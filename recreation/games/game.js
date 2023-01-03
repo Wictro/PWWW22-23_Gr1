@@ -1,54 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const cards = [
-        {
-            name: 'burger',
-            img: '../images/burger.jpg'
-        },
-        {
-            name: 'fries',
-            img: '../images/fries.jpg'
-        },
-        {
-            name: 'hotdog',
-            img: '../images/hotdog.jpg'
-        },
-        {
-            name: 'iceCream',
-            img: '../images/ice-cream.jpg'
-        },
-        {
-            name: 'milkshake',
-            img: '../images/milkshake.jpg'
-        },
-        {
-            name: 'pizza',
-            img: '../images/pizza.jpg'
-        },
-        {
-            name: 'burger',
-            img: '../images/burger.jpg'
-        },
-        {
-            name: 'fries',
-            img: '../images/fries.jpg'
-        },
-        {
-            name: 'hotdog',
-            img: '../images/hotdog.jpg'
-        },
-        {
-            name: 'iceCream',
-            img: '../images/ice-cream.jpg'
-        },
-        {
-            name: 'milkshake',
-            img: '../images/milkshake.jpg'
-        },
-        {
-            name: 'pizza',
-            img: '../images/pizza.jpg'
-        }
-    ]
+    function Cards(name, img) {
+        this.name = name;
+        this.img = img;
+    }
+    const card1 = new Cards('burger', '../images/burger.jpg');
+    const card2 = new Cards('fries', '../images/fries.jpg');
+    const card3 = new Cards('hotdog', '../images/hotdog.jpg');
+    const card4 = new Cards('iceCream', '../images/ice-cream.jpg');
+    const card5 = new Cards('milkshake', '../images/milkshake.jpg');
+    const card6 = new Cards('pizza', '../images/pizza.jpg');
+    const card7 = new Cards('burger', '../images/burger.jpg');
+    const card8 = new Cards('fries', '../images/fries.jpg');
+    const card9 = new Cards('hotdog', '../images/hotdog.jpg');
+    const card10 = new Cards('iceCream', '../images/ice-cream.jpg');
+    const card11 = new Cards('milkshake', '../images/milkshake.jpg');
+    const card12 = new Cards('pizza', '../images/pizza.jpg');
+    
+    const cards = [ card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11, card12 ];
     cards.sort(() => 0.5 - Math.random())
 
     const grid = document.querySelector('.grid')

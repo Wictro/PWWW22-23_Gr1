@@ -1,4 +1,4 @@
-let usernameRegex = /^[a-zA-Z0-9@.]{6,30}$/;
+let usernameRegex = /^[a-zA-Z0-9@.]{6,30}$/ig;
 let passwordRegex = /^[a-zA-Z0-9.,@!&$]{8,}$/;
 
 let form = document.getElementById("login-form");

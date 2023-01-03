@@ -1,5 +1,5 @@
 let nameRegex = /^.{2,}$/;
-let usernameRegex = /^[a-zA-Z0-9@.]{3,15}$/;
+let usernameRegex = /^[a-zA-Z0-9@.]{3,15}$/ig;
 let passwordRegex = /^[a-zA-Z0-9.,@!&$]{8,}$/;
 
 let form = document.getElementById("signup-form");

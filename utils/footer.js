@@ -1,6 +1,6 @@
 function validateEmail() {
     let emailValue = document.getElementById('newsletter-email').value
-    if (!emailValue.includes('@') || !emailValue.includes('.com')) {
+    if (!emailValue.includes('@') || !emailValue.includes('.com') || !emailValue.includes('.edu')) {
         alert('Please write a valid email!')
         throw new Error('Please write a valid email')
     }

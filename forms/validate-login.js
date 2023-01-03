@@ -6,7 +6,6 @@ let emailInput = document.getElementById("email");
 let passwordInput = document.getElementById("password");
 
 let dataset = Object.values(window.localStorage).map(item => JSON.parse(item));
-console.log(dataset);
 
 form.onsubmit = (event) => {
   let isValidEmail = EMAIL_REGEXP.test(emailInput.value);
@@ -36,7 +35,7 @@ form.onsubmit = (event) => {
         }
 
         event.preventDefault();
-        
+
         alert('Successful login!');
         window.location.href = "../index.html"
   }

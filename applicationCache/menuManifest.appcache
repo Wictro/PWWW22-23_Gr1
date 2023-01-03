@@ -1,10 +1,10 @@
 CACHE MANIFEST
-# 2023-01-01 v1.0.2
-/styles/menu-style.css
-/utils/navbar.js
-/utils/footer.js
-/assets/fonts/*
-/assets/images/*
+# 2023-01-01 v1.0.3
+styles/menu-style.css
+utils/navbar.js
+utils/footer.js
+assets/fonts/*
+assets/images/*
 
 NETWORK:
 *

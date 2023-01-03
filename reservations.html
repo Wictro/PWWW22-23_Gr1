@@ -50,7 +50,7 @@
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
                         </div>
                         <div class="input-element">
-                            <input type="time" name="time" min="09:30" max="18:00"/>
+                            <input type="time" name="time"/>
                         </div>
                     </div>
                     </br>
@@ -116,8 +116,9 @@
         var people = document.querySelector(`input[name="people"]`).value
 
         let isValidPeopleInput = peopleInputRegEx.test(people)
+        const numericDate = parseInt(time.replace(":", ""))
 
-        if (date === "" || time === "" || people === "" || people < 1 || people > 99 || !isValidPeopleInput) {
+        if (date === "" || time === "" || people === "" || people < 1 || people > 99 || !isValidPeopleInput || numericDate < 1000 || numericDate > 1800) {
             alert("Something went wrong! Please check the data inputs")
             throw new Error("Something went wrong! Please check the data inputs")
         }

@@ -18,7 +18,7 @@
                 <script src="utils/navbar.js" type="text/JavaScript"></script>
             </nav>
         </div>
-        <div class="page-title">
+        <div class="page-title" onmouseover="mouseOver()">
             RESERVATIONS
         </div>
     </header>
@@ -94,6 +94,11 @@
     </footer>
 </body>
 <script>
+    function mouseOver() {
+        let element = document.querySelector('.page-title')
+        element.style.transform = 'rotateY(360deg)';
+    }
+
     function isValidJSON(text) {
         try {
             JSON.parse(text);

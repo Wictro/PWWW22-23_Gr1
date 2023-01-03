@@ -345,6 +345,11 @@ ul li a {
     transform: rotateX(2deg);
 }
 
+#submit-reservation:hover {
+    background-color: rgb(4, 83, 4);
+    cursor: pointer;
+}
+
 .reservation-mid {
     padding-left: 40px;
     font-family: 'Great Vibes', sans-serif;

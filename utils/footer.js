@@ -1,6 +1,9 @@
 function validateEmail() {
+    let usernameRegex = /^[a-zA-Z0-9@.]{6,30}$/
+
     let emailValue = document.getElementById('newsletter-email').value
-    if (!emailValue.includes('@') || !emailValue.includes('.com') || !emailValue.includes('.edu')) {
+    let isValidEmail = usernameRegex.test(emailValue.value)
+    if (!isValidEmail || !emailValue.includes('.com') || !emailValue.includes('.edu')) {
         alert('Please write a valid email!')
         throw new Error('Please write a valid email')
     }

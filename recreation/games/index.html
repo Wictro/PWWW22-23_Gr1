@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+<body>
+    <div id="game-side">
+        <div id = "board">
+            <div class="unit" id="1"></div>
+            <div class="unit" id="2"></div>
+            <div class="unit" id="3"></div>
+            <div class="unit" id="4"></div>
+            <div class="unit" id="5"></div>
+            <div class="unit" id="6"></div>
+            <div class="unit" id="7"></div>
+            <div class="unit" id="8"></div>
+            <div class="unit" id="9"></div>
+        </div>
+    </div>
+
+    <div id="log-side">
+        <div id="dialogue">
+            <input type="text" placeholder = "Player 1" name="lojtari1" class="field" id="lojtari1" autocomplete="off"><br>
+            <input type="text" placeholder = "Player 2" name="lojtari2" class="field" id="lojtari2" autocomplete="off"><br>
+            <button class="butoni" id="start" onclick="prePlay()">Start Game</button>
+            <button class="butoni" id="reset" onclick="restart()">Restart Game</button>
+            <p id="state"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

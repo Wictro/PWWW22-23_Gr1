@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url(./background.jpg);
+}
+
+#game-side{
+    align-content: center;
+    padding: 50px;
+}
+
+#log-side{
+    align-content: center;
+    padding: 50px;
+}
+
+
+#board{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-gap: 10px;
+    background-color: rgb(54, 192, 123);
+    width: 470px;
+    height: 470px;
+    padding: 10px;
+    margin: auto;
+}
+
+.unit{
+    background-color: rgb(45, 174, 84);
+    text-align: center;
+    font-size: 130px;
+}
+
+.butoni{
+    width: 150px;
+    height: 75px;
+    margin-top: 10px;
+    background-color: rgb(157, 219, 175);
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.butoni:hover{
+    background-color: rgb(138, 138, 138);
+}
+
+#reset{
+    margin-top: 0;
+    display: none;
+}
+
+#dialogue{
+    width: 490px;
+    height: 490px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+}
+
+.field{
+    height: 30px;
+    width: 224px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(150, 201, 165);
+}
+
+.field:hover{
+    background-color: rgb(138, 138, 138);
+}
+
+#state{
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+}

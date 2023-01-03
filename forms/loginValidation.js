@@ -43,11 +43,10 @@ form.addEventListener("submit", (event) => {
   }
 
   if (isValidUsername && isValidPassword) {
-    // event.preventDefault();
-    let username = usernameRegex.exec(usernameInput.value)[0];
+    event.preventDefault();
     let password = passwordRegex.exec(passwordInput.value)[0];
     const isValidLogin = dataset?.map((item, index) => {
-      if (username !== item.email) {
+      if (usernameInput.value !== item.email) {
         messageError = "An account with the given email address doesn't exist. Please create one!"
         return false
       }
@@ -61,7 +60,6 @@ form.addEventListener("submit", (event) => {
       }
     })
     if (isValidLogin.includes(true)) {
-      event.preventDefault();
       alert('Successful login!')
       window.location.href = "../index.html"
     }

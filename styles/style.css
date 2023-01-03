@@ -865,9 +865,9 @@ footer {
     }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1320px) {
     footer {
-        width: 1110px;
+        width: 1300px;
     }
 }
 

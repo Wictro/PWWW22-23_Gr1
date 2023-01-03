@@ -64,20 +64,20 @@
                         <div class="input-element">
                             <input list="numbers" name="people" id="peopleOptions" placeholder="Number of people">
                             <datalist id="numbers">
-                                <option>1 Person</option>
-                                <option>2 People</option>
-                                <option>3 People</option>
-                                <option>4 People</option>
-                                <option>5 People</option>
-                                <option>6 People</option>
-                                <option>7 People</option>
-                                <option>8 People</option>
-                                <option>9 people</option>
-                                <option>10 people</option>
-                                <option>15 people</option>
-                                <option>20 people</option>
-                                <option>30 people</option>
-                                <option>50 people</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>15</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>50</option>
                             </datalist>
                         </div>
                     </div>
@@ -94,6 +94,7 @@
     </footer>
 </body>
 <script>
+    var peopleInputRegEx = /^[0-9]{1,2}$/;
     function mouseOver() {
         let element = document.querySelector('.page-title')
         element.style.transform = 'rotateY(360deg)';
@@ -113,9 +114,11 @@
         var date = document.querySelector(`input[name="date"]`).value
         var time = document.querySelector(`input[name="time"]`).value
         var people = document.querySelector(`input[name="people"]`).value
-        let lastReservation = localStorage.getItem('reservation');
 
-        if (date === "" || time === "" || people === "" || people < 1 || people > 99) {
+        let isValidPeopleInput = peopleInputRegEx.test(people)
+        console.log(isValidPeopleInput)
+
+        if (date === "" || time === "" || people === "" || people < 1 || people > 99 || !isValidPeopleInput) {
             alert("Something went wrong! Please check the data inputs")
             throw new Error("Something went wrong! Please check the data inputs")
         }
@@ -123,24 +126,37 @@
             let isJSONFormat = isValidJSON(sessionStorage.getItem('reservation'))
             if (isJSONFormat) {
                 let lastReservation = JSON.parse(sessionStorage.getItem('reservation'))
-                console.log(lastReservation)
+                // console.log(lastReservation)
                 let reservation = {
                     date: date,
                     time: time,
                     people: people
                 };
-                if (lastReservation.date === reservation.date && lastReservation.time === reservation.time && lastReservation.people === reservation.people) {
-                    alert('The reservation with the same exact data was made from this accout!')
-                    throw new Error('The reservation with the same exact data was made from this accout!')
+                if (lastReservation) {
+                    if ((lastReservation.date === reservation.date) && lastReservation.time === reservation.time && lastReservation.people === reservation.people) {
+                        alert('The reservation with the same exact data was made from this accout!')
+                        throw new Error('The reservation with the same exact data was made from this accout!')
+                    }
+                    else {
+                        console.log(time)
+                        alert("Reservation was successful!");
+                        sessionStorage.setItem('reservation', JSON.stringify(reservation));
+                        document.querySelector(`input[name="date"]`).value = "";
+                        document.querySelector(`input[name="time"]`).value = "";
+                        document.querySelector(`input[name="people"]`).value = "";
+                    }
                 }
                 else {
                     alert("Reservation was successful!");
                     sessionStorage.setItem('reservation', JSON.stringify(reservation))
+                    document.querySelector(`input[name="date"]`).value = "";
+                    document.querySelector(`input[name="time"]`).value = "";
+                    document.querySelector(`input[name="people"]`).value = "";
                 }
             }
             else {
-                alert("A mistake has happened; data is not in json format!")
-                throw new Error("A mistake has happened; data is not in json format!")
+                alert("An internal error has happened; data is not in json format!")
+                throw new Error("An internal error has happened; data is not in json format!")
             }
         }
     }

@@ -19,7 +19,7 @@
    
    header {
     width: 100%;
-    height: 750px;
+    height: 1000px;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../assets/images/shopBackground.png') center bottom repeat, 
     url("../assets/images/shopBackground1.jpg") repeat top left ;
     background-size: 20%;
@@ -29,11 +29,11 @@
 
    .page-title {
     color: white;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 100px;
     text-align: center;
     font-weight: 500;
-    padding-top: 20%;
+    padding-top: 23%;
 }
    
    .navbar-logo img {

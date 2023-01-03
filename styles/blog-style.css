@@ -34,7 +34,7 @@ header {
 
 .page-title {
     color: white;
-    font-family: sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: 100px;
     text-align: center;
     font-weight: 500;
@@ -361,12 +361,12 @@ figcaption {
     font-family: 'Great Vibes' , sans-serif;
     font-size: 15px;
     font-weight: 600;
-    color: gray;
+    color: black;
     position: absolute;
     z-index: 1;
-    top: 0;
-    right: 0;
-    margin-right: 5px;
+    margin-left: 330px;
+    margin-right: 5px; 
+    margin-top: -205px;
 }
 
 .likes-and-comments {

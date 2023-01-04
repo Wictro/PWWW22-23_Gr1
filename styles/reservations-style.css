@@ -254,7 +254,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-c#995c00entials {
+.footer-credentials {
     height: 80px;
     display: flex;
     margin: auto;
@@ -322,7 +322,7 @@ ul li a {
 
 .reservation-submit p {
     font-family: sans-serif;
-    color: #995c00;
+    color: red;
     padding-bottom: -15px;
     text-align: center;
 }

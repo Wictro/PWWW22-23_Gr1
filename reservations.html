@@ -16,6 +16,12 @@
         <div class="navbar">
             <nav>
                 <script src="utils/navbar.js" type="text/JavaScript"></script>
+                <script>
+                    const socialLinks = document.querySelector(".social-links")
+                    socialLinks.innerHTML = ` <a href="https://www.facebook.com" target="_blank" id="facebook-link"><i class="fa fa-facebook icon" style="color: white;"></i></a>
+                    <a href="https://www.twitter.com" id="twitter-link" target="_blank" style="margin-left:-1em;"><i class="fa fa-twitter icon" style="color: white;"></i></a>
+                    <a href="https://www.instagram.com" id="instagram-link" target="_blank" style="margin-left:-1em;"><i class="fa fa-instagram icon" style="color: white;"></i></a>`
+                </script>
             </nav>
         </div>
         <div class="page-title" onmouseover="mouseOver()">
@@ -91,6 +97,18 @@
     </div>
     <footer>
         <script src="utils/footer.js" type="text/JavaScript"></script>
+        <script>
+            const contact = document.getElementById("contact")
+            contact.innerHTML = `<h2>FIND US ON</h2>
+                        <nav>
+                            <ul class="social-links">
+                                <a href="https://www.facebook.com" id="facebook-link"><i class="fa fa-facebook icon" style="color: rgb(197, 138, 27);"></i></a>
+                                <a href="https://www.twitter.com" id="twitter-link" style=" margin-left:-1em;"><i class="fa fa-twitter icon" style="color: white;"></i></a>
+                                <a href="https://www.pinterest.com" id="pinterest-link" style=" margin-left:-1em;"><i class="fa fa-pinterest icon" style="color: white;"></i></a>
+                                <a href="https://www.instagram.com" id="instagram-link" style=" margin-left:-1em;"><i class="fa fa-instagram icon" style="color: white;"></i></a>
+                            </ul>
+                        </nav>`;
+        </script>
     </footer>
 </body>
 <script>

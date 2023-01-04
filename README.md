@@ -12,3 +12,5 @@ This is a simple presentation project built on plain HTML, CSS, and JavaScript. 
 
 It also contains some extra pages (login and signup - with validations), a simple game, FAQ page, html page for internal errors etc.
 
+THE PROJECT IS HOSTED ONLINE: https://wictro.github.io/PWWW22-23_Gr1/index.html
+

@@ -10,7 +10,7 @@ function findDistance() {
    else {
     const distance = Math.round(getDistanceFromLatLonInKm(userLatitude, userLongitude, restauratnLatitude, restauratnLongitude))
     const showDistance = document.getElementById("distance-calculator")
-    showDistance.innerHTML = "<h5>Distance to the restaurant is " + distance+" km</h5>"
+    showDistance.innerHTML = "<h5 style='font-size: 18px;'>Distance to the restaurant is " + distance+" km</h5>"
    }
    
 }

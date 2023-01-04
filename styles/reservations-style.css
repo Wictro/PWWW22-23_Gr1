@@ -20,9 +20,9 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background: -webkit-radial-gradient(bottom right, #91cc98, #0a2455);
-    background: -moz-radial-gradient(bottom right, #91cc98, #0a2455);
-    background: radial-gradient(bottom right, #91cc98, #0a2455);
+    background: -webkit-radial-gradient(bottom right, #4d3300, #996600);
+    background: -moz-radial-gradient(bottom right, #4d3300, #996600);
+    background: radial-gradient(bottom right, #4d3300, #996600);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
@@ -38,19 +38,19 @@ header {
 
 @keyframes changeBackgroundColor {
     0% {
-        background: -webkit-radial-gradient(bottom right, #91cc98, #0a2455);
-        background: -moz-radial-gradient(bottom right, #91cc98, #0a2455);
-        background: radial-gradient(bottom right, #91cc98, #0a2455);
+        background: -webkit-radial-gradient(bottom right, #4d3300, #996600);
+        background: -moz-radial-gradient(bottom right, #4d3300, #996600);
+        background: radial-gradient(bottom right, #4d3300, #996600);
     }
     50% {
-        background: -webkit-radial-gradient(bottom right, #91cc45, orange);
-        background: -moz-radial-gradient(bottom right, #91cc45, orange);
-        background: radial-gradient(bottom right, #91cc45, orange);
+        background: -webkit-radial-gradient(bottom right, #806000, #663d00);
+        background: -moz-radial-gradient(bottom right, #806000, #663d00);
+        background: radial-gradient(bottom right, #806000, #663d00);
     }
     100% {
-        background: -webkit-radial-gradient(bottom right, #91cc45, red);
-        background: -moz-radial-gradient(bottom right, #91cc45, red);
-        background: radial-gradient(bottom right, #91cc45, red);
+        background: -webkit-radial-gradient(bottom right, #806000, #995c00);
+        background: -moz-radial-gradient(bottom right, #806000, #995c00);
+        background: radial-gradient(bottom right, #806000, #995c00);
     }
 }
 
@@ -254,7 +254,7 @@ footer {
     cursor: pointer;
 }
 
-.footer-credentials {
+.footer-c#995c00entials {
     height: 80px;
     display: flex;
     margin: auto;
@@ -322,7 +322,7 @@ ul li a {
 
 .reservation-submit p {
     font-family: sans-serif;
-    color: red;
+    color: #995c00;
     padding-bottom: -15px;
     text-align: center;
 }

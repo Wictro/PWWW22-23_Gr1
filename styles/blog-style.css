@@ -364,7 +364,6 @@ figcaption {
     color: black;
     position: absolute;
     z-index: 1;
-    margin-left: 330px;
     margin-right: 5px; 
     margin-top: -205px;
 }
@@ -405,7 +404,7 @@ figcaption {
     color: #23231F;
 }
 
-#blog-comments-1{
+.blog-comments{ 
     overflow-y: scroll;
     height: 165px;
 }

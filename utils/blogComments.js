@@ -34,19 +34,18 @@ var commentExamples = [
     "This food has great flavor!",
     "I love the combination of flavors in this dish, it's really unique.",
     "This meal is absolutely delicious!",
+    "This meal is absolutely delicious!"
 ]
 
 var peopleNames = ["Anastasia Horton", "Mia Andrade", "Brianna Benton", "Chiara Ingram", "Rafferty Riddle", "Selina Klein", "Nicholas Brady", "Dana Wade",
     "Isobel Boyer", "Neil Nixon", "Zackary Hall", "Pearl Sawyer", "Arun Mahoney", "Henri Cervantes", "Mollie Davila", "Mohammad Gutierrez",
-    "Shania Berg", "Olivier Harmon", "Talia Yoder", "Sebastian Rowe", "Xavier Carter", "Nicolas Willis", "Anton Doherty", "Minnie Hale"]
+    "Shania Berg", "Olivier Harmon", "Talia Yoder", "Sebastian Rowe", "Xavier Carter", "Nicolas Willis", "Anton Doherty", "Minnie Hale", "Chiara Ingram"]
 
 var blogs = [];
 for (let blog = 0; blog <12; blog++) {
     blogs[blog] = document.getElementById(`blog-comments-${blog+1}`)
     var commentsContent= '';
     let i = 0;
-    if(blog!=11){
-    
     while (i < 3) {
         commentsContent = commentsContent + '<div style="display:flex; flex-wrap: wrap; ">' +
                               '<div style="font-size: 25px; margin: 0px 5px 0px 6px; color: white; width: 10%; height: 40px; background-color: #626258 ; border-radius: 20px"><i class="fa fa-user" style="padding-top: 15%; padding-left: 25%;"></i></div>' +
@@ -56,18 +55,6 @@ for (let blog = 0; blog <12; blog++) {
                               '</div>' +
                           '</div>' ;
         i++;
-     }}
-     else{
-        while (i < 2) {
-            commentsContent = commentsContent + '<div style="display:flex; flex-wrap: wrap; ">' +
-                                  '<div style="font-size: 25px; margin: 0px 5px 0px 6px; color: white; width: 10%; height: 40px; background-color: #626258 ; border-radius: 20px"><i class="fa fa-user" style="padding-top: 15%; padding-left: 25%;"></i></div>' +
-                                  '<div style = "margin: 0px 10px 13px 0px; border-radius: 15px; width: 82%; background-color: rgba(197, 138, 27, 0.1);   border: 0.8px solid rgb(197, 138, 27); font-family: sans serif;">' +
-                                         '<span style="font-size: 13px; font-weight: 600; color: black; padding-left: 12px; padding-top: 3px;">' + peopleNames[blog*2+i] + '</span>' +
-                                         '<p style="font-size: 11px; color: #23231F; padding-left: 20px; padding-bottoms: 5px;">' + commentExamples[blog*2+i] + '</p>' +
-                                  '</div>' +
-                              '</div>' ;
-            i++;
-         }
      }
      blogs[blog].innerHTML = commentsContent
 }

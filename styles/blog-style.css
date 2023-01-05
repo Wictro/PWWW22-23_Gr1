@@ -404,3 +404,8 @@ figcaption {
     outline:#4e4f50;
     color: #23231F;
 }
+
+#blog-comments-1{
+    overflow-y: scroll;
+    height: 165px;
+}
